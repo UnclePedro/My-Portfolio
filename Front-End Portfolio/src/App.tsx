@@ -28,16 +28,39 @@ function App() {
             <h2 className="text-6xl font-semibold">
               <span className={'text-yellow-300 font-extrabold'}>&gt;</span> About Me
             </h2>
-            <p className={'text-3xl my-8 font-thin'}>
+            <p className={'text-3xl my-8 font-regular'}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam
               eleifend accumsan ultrices.
             </p>
-            <p className={'text-3xl my-8'}>
+            <p className={'text-2xl my-8'}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam
-              eleifend accumsan ultrices.
+              eleifend accumsan ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet
+              consectetur felis quis porta. Nam eleifend accumsan ultrices.
             </p>
+            <ol className={'text-2xl my-8'}>
+              <li>
+                <span className={'text-yellow-300 font-extrabold'}>&gt;</span> JavaScript
+              </li>
+              <li>
+                <span className={'text-yellow-300 font-extrabold'}>&gt;</span> React
+              </li>
+              <li>
+                <span className={'text-yellow-300 font-extrabold'}>&gt;</span> Node.js
+              </li>
+            </ol>
+            <ol className={'text-2xl my-8 inline-flex flex-col'}>
+              <li>
+                <span className={'text-yellow-300 font-extrabold'}>&gt;</span> JavaScript
+              </li>
+              <li>
+                <span className={'text-yellow-300 font-extrabold'}>&gt;</span> React
+              </li>
+              <li>
+                <span className={'text-yellow-300 font-extrabold'}>&gt;</span> Node.js
+              </li>
+            </ol>
           </div>
-          <img src={headshot} alt="headshot" className={'flex flex-end h-[500px] pl-10 pt-24'} />
+          <img src={headshot} alt="headshot" className={'flex flex-end h-[460px] pl-16 pt-5'} />
         </div>
       </body>
     </>
