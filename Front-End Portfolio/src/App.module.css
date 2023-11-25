@@ -3,7 +3,7 @@
 }
 
 .app-heading {
-  @apply text-8xl font-semibold mb-4;
+  @apply text-8xl font-extrabold mb-4;
 }
 
 .button {
