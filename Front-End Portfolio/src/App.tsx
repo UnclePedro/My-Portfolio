@@ -1,6 +1,7 @@
 //import { useState } from 'react';
 import styles from './App.module.css';
 import headshot from '/Users/peter/Documents/VS Code Files/231125 - Front-End Portfolio/Front-End Portfolio/src/assets/temp-headshot.jpeg';
+import tempProject from '/Users/peter/Documents/VS Code Files/231125 - Front-End Portfolio/Front-End Portfolio/src/assets/project-placeholder.png';
 
 // need to fix font weight issues
 
@@ -62,7 +63,85 @@ function App() {
               </ol>
             </div>
           </div>
-          <img src={headshot} alt="headshot" className={'flex flex-end h-[620px] pl-16 pt-24'} />
+          <img
+            src={headshot}
+            alt="headshot"
+            className={'flex flex-end h-[520px] ml-16 mt-24 border-2 border-amber-400'}
+          />
+        </div>
+
+        <div className={'rotate-90 pl-52'}>
+          <span className={'flex justify-center text-yellow-300 font-extrabold text-5xl w-screen fixed -mx-20'}>
+            &gt;
+          </span>
+        </div>
+
+        <div>
+          <div className={'flex justify-center mt-56'}>
+            <div className={'w-[550px]'}>
+              <h2 className="text-5xl font-semibold">Project #1</h2>
+              <p className={'text-2xl my-8'}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta.
+                Nam eleifend accumsan ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet
+                consectetur felis quis porta. Nam eleifend accumsan ultrices.
+              </p>
+            </div>
+            <div className={'flex'}>
+              <img
+                src={tempProject}
+                alt="headshot"
+                className={'flex flex-end h-[300px] ml-16 border-2 border-amber-400'}
+              />
+            </div>
+          </div>
+          <hr className={'flex justify-center border-t border-4 mt-24 ml-[20%] border-amber-400 w-[540px]'} />
+        </div>
+
+        <div>
+          <div className={'flex justify-center flex-row-reverse mt-36'}>
+            <div className={'w-[550px] ml-[120px]'}>
+              <h2 className="text-5xl font-semibold">Project #2</h2>
+              <p className={'text-2xl my-8'}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta.
+                Nam eleifend accumsan ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet
+                consectetur felis quis porta. Nam eleifend accumsan ultrices.
+              </p>
+            </div>
+            <div className={'flex'}>
+              <img
+                src={tempProject}
+                alt="headshot"
+                className={'flex flex-end h-[300px] ml-16 border-2 border-amber-400'}
+              />
+            </div>
+          </div>
+          <hr className={'flex justify-center border-t border-4 mt-24 ml-[54%] border-amber-400 w-[540px]'} />
+        </div>
+
+        <div>
+          <div className={'flex justify-center mt-36'}>
+            <div className={'w-[550px]'}>
+              <h2 className="text-5xl font-semibold">Project #3</h2>
+              <p className={'text-2xl my-8'}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta.
+                Nam eleifend accumsan ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet
+                consectetur felis quis porta. Nam eleifend accumsan ultrices.
+              </p>
+            </div>
+            <div className={'flex'}>
+              <img
+                src={tempProject}
+                alt="headshot"
+                className={'flex flex-end h-[300px] ml-16 border-2 border-amber-400'}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className={'rotate-90 pl-52'}>
+          <span className={'flex justify-center text-yellow-300 font-extrabold text-5xl w-screen fixed -mx-20'}>
+            &gt;
+          </span>
         </div>
       </body>
     </>
