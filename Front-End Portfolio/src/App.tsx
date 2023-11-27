@@ -94,7 +94,7 @@ function App() {
               />
             </div>
           </div>
-          <hr className={'flex justify-center border-t border-4 mt-24 ml-[20%] border-amber-400 w-[540px]'} />
+          <hr className={'flex justify-center border-t border-4 mt-24 ml-[52%] border-amber-400 w-[540px]'} />
         </div>
 
         <div>
@@ -115,7 +115,7 @@ function App() {
               />
             </div>
           </div>
-          <hr className={'flex justify-center border-t border-4 mt-24 ml-[54%] border-amber-400 w-[540px]'} />
+          <hr className={'flex justify-center border-t border-4 mt-24 ml-[20%] border-amber-400 w-[540px]'} />
         </div>
 
         <div>
@@ -142,6 +142,17 @@ function App() {
           <span className={'flex justify-center text-yellow-300 font-extrabold text-5xl w-screen fixed -mx-20'}>
             &gt;
           </span>
+        </div>
+
+        <div className={'flex justify-center pt-56'}>
+          <div className={'w-[650px]'}>
+            <h2 className="text-6xl font-semibold">Get In Touch!</h2>
+            <p className={'text-2xl my-8'}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam
+              eleifend accumsan ultrices.
+            </p>
+            <button>Say Hello!</button>
+          </div>
         </div>
       </body>
     </>
