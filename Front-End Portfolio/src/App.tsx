@@ -1,9 +1,11 @@
 //import { useState } from 'react';
 import styles from './App.module.css';
-import headshot from '/Users/peter/Documents/VS Code Files/231125 - Front-End Portfolio/Front-End Portfolio/src/assets/temp-headshot.jpeg';
-import tempProject from '/Users/peter/Documents/VS Code Files/231125 - Front-End Portfolio/Front-End Portfolio/src/assets/project-placeholder.png';
+import headshot from '../src/assets/temp-headshot.jpeg';
+import tempProjectImg from '../src/assets/project-placeholder.png';
+import ProjectBlock from './components/ProjectBlock';
 
 // need to fix font weight issues
+// need to adjust ProjectBlock component so content layout functions properly
 
 function App() {
   return (
@@ -76,7 +78,21 @@ function App() {
           </span>
         </div>
 
-        <div>
+        <ProjectBlock description={'test description'} title={'Project #1'} img={tempProjectImg} isImgOnLeft={false} />
+        <ProjectBlock
+          description={'test description #2'}
+          title={'Project #2'}
+          img={tempProjectImg}
+          isImgOnLeft={true}
+        />
+        <ProjectBlock
+          description={'test description #3'}
+          title={'Project #3'}
+          img={tempProjectImg}
+          isImgOnLeft={false}
+        />
+
+        {/* <div>
           <div className={'flex justify-center mt-56'}>
             <div className={'w-[550px]'}>
               <h2 className="text-5xl font-semibold">Project #1</h2>
@@ -109,13 +125,13 @@ function App() {
             </div>
             <div className={'flex'}>
               <img
-                src={tempProject}
+                src={tempProjectImg}
                 alt="headshot"
                 className={'flex flex-end h-[300px] ml-16 border-2 border-amber-400'}
               />
             </div>
           </div>
-          <hr className={'flex justify-center border-t border-4 mt-24 ml-[20%] border-amber-400 w-[540px]'} />
+          <hr className={'flex justify-center border-t border-4 mt-24 ml-[16%] border-amber-400 w-[540px]'} />
         </div>
 
         <div>
@@ -130,13 +146,13 @@ function App() {
             </div>
             <div className={'flex'}>
               <img
-                src={tempProject}
+                src={tempProjectImg}
                 alt="headshot"
                 className={'flex flex-end h-[300px] ml-16 border-2 border-amber-400'}
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className={'rotate-90 pl-52'}>
           <span className={'flex justify-center text-yellow-300 font-extrabold text-5xl w-screen fixed -mx-20'}>
