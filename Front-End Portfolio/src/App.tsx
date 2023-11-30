@@ -6,6 +6,7 @@ import ProjectBlock from './components/ProjectBlock';
 import AboutMeBlock from './components/AboutMeBlock';
 import LandingPageBanner from './components/LandingPageBanner';
 import GetInTouch from './components/GetInTouch';
+import ArrowElement from './components/ArrowElement';
 
 // need to fix font weight issues
 
@@ -13,12 +14,15 @@ function App() {
   return (
     <>
       <LandingPageBanner heading1={'Hi, Im Peter'} heading2={'Welcome to my front-end portfolio.'} />
+      <div className={'-mt-[120px]'}>
+        <ArrowElement />
+      </div>
 
-      <div className={'rotate-90 pl-10'}>
+      {/* <div className={'rotate-90'}>
         <span className={'flex justify-center text-yellow-300 font-extrabold text-5xl w-screen fixed -mx-20'}>
           &gt;
         </span>
-      </div>
+      </div> */}
 
       <AboutMeBlock
         title={'About Me'}
@@ -31,11 +35,7 @@ function App() {
         img={headshot}
       />
 
-      <div className={'rotate-90 pl-52'}>
-        <span className={'flex justify-center text-yellow-300 font-extrabold text-5xl w-screen fixed -mx-20'}>
-          &gt;
-        </span>
-      </div>
+      <ArrowElement />
 
       <div className={'mt-56'}>
         <ProjectBlock
@@ -64,14 +64,10 @@ function App() {
         />
       </div>
 
-      <div className={'rotate-90 pl-52'}>
-        <span className={'flex justify-center text-yellow-300 font-extrabold text-5xl w-screen fixed -mx-20'}>
-          &gt;
-        </span>
-      </div>
+      <ArrowElement />
 
       <GetInTouch
-        title={'Get in touch!'}
+        title={'Get in touch'}
         bodyText={
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices.'
         }

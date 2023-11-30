@@ -8,7 +8,7 @@ function AboutMeBlock(props: { title: string; description1: string; description2
             {props.title}
           </h2>
           <p className={'text-3xl my-8 font-regular'}>{props.description1}</p>
-          <p className={'text-2xl my-8'}>{props.description2}</p>
+          <p className={'text-2xl'}>{props.description2}</p>
           <div className={'flex'}>
             <ol className={'text-2xl my-8'}>
               <li>
@@ -34,11 +34,7 @@ function AboutMeBlock(props: { title: string; description1: string; description2
             </ol>
           </div>
         </div>
-        <img
-          src={props.img}
-          alt="headshot"
-          className={'flex flex-end h-[520px] ml-16 mt-24 border-2 border-amber-400'}
-        />
+        <img src={props.img} alt="headshot" className={'flex flex-end h-[520px] ml-16 border-2 border-amber-400'} />
       </div>
     </>
   );
