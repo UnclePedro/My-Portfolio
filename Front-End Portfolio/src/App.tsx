@@ -7,6 +7,7 @@ import AboutMeBlock from './components/AboutMeBlock';
 import LandingPageBanner from './components/LandingPageBanner';
 import GetInTouch from './components/GetInTouch';
 import ArrowElement from './components/ArrowElement';
+import Footer from './components/Footer';
 
 // need to fix font weight issues
 
@@ -60,16 +61,22 @@ function App() {
           displayLine={false}
         />
       </div>
+      {/* 
+      <div className="h-8">
+        <ArrowElement />
+      </div> */}
 
-      <ArrowElement />
+      <div className="mb-[300px] mt-[150px]">
+        <GetInTouch
+          title={'Get in touch'}
+          bodyText={
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices.'
+          }
+          buttonText={'Say Hello!'}
+        />
+      </div>
 
-      <GetInTouch
-        title={'Get in touch'}
-        bodyText={
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices.'
-        }
-        buttonText={'Say Hello!'}
-      />
+      <Footer />
     </>
   );
 }
