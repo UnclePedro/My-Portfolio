@@ -13,16 +13,10 @@ import ArrowElement from './components/ArrowElement';
 function App() {
   return (
     <>
-      <LandingPageBanner heading1={'Hi, Im Peter'} heading2={'Welcome to my front-end portfolio.'} />
+      <LandingPageBanner heading1={'Hi, Im Peter'} heading2={'Welcome to my front-end portfolio'} />
       <div className={'-mt-[120px]'}>
         <ArrowElement />
       </div>
-
-      {/* <div className={'rotate-90'}>
-        <span className={'flex justify-center text-yellow-300 font-extrabold text-5xl w-screen fixed -mx-20'}>
-          &gt;
-        </span>
-      </div> */}
 
       <AboutMeBlock
         title={'About Me'}
@@ -45,6 +39,7 @@ function App() {
           title={'Project #1'}
           img={tempProjectImg}
           isImgOnLeft={false}
+          displayLine={true}
         />
         <ProjectBlock
           description={
@@ -53,6 +48,7 @@ function App() {
           title={'Project #2'}
           img={tempProjectImg}
           isImgOnLeft={true}
+          displayLine={true}
         />
         <ProjectBlock
           description={
@@ -61,6 +57,7 @@ function App() {
           title={'Project #3'}
           img={tempProjectImg}
           isImgOnLeft={false}
+          displayLine={false}
         />
       </div>
 

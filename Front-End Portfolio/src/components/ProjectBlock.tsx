@@ -1,4 +1,10 @@
-function ProjectBlock(props: { title: string; description: string; img: string; isImgOnLeft: boolean }) {
+function ProjectBlock(props: {
+  title: string;
+  description: string;
+  img: string;
+  isImgOnLeft: boolean;
+  displayLine: boolean;
+}) {
   return (
     <>
       <div className={'flex justify-center mt-24' + (props.isImgOnLeft ? ' flex-row-reverse' : '')}>
@@ -8,7 +14,12 @@ function ProjectBlock(props: { title: string; description: string; img: string; 
         </div>
         <div className={'flex flex-col'}>
           <img src={props.img} alt="headshot" className={'flex flex-end h-[300px] border-2 border-amber-400'} />
-          <hr className={'flex justify-center border-t border-4 mt-24 border-amber-400 w-[540px]'} />
+          <hr
+            className={
+              'flex justify-center border-t border-4 mt-24 border-amber-400 w-[540px]' +
+              (props.displayLine ? '' : ' hidden')
+            }
+          />
         </div>
       </div>
     </>
