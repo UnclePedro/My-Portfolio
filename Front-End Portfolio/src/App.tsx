@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <LandingPageBanner heading1={'Hi, Im Peter'} heading2={'Welcome to my front-end portfolio'} />
+      <LandingPageBanner heading1={"Hi, I'm Peter"} heading2={'Welcome to my front-end portfolio'} />
       <div className={'-mt-[120px]'}>
         <ArrowElement />
       </div>
@@ -30,7 +30,9 @@ function App() {
         img={headshot}
       />
 
-      <ArrowElement />
+      <div>
+        <ArrowElement />
+      </div>
 
       <div className={'mt-56'}>
         <ProjectBlock
