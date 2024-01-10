@@ -34,7 +34,7 @@ function AboutMeBlock(props: { title: string; description1: string; description2
             </ol>
           </div>
         </div>
-        <img src={props.img} alt="headshot" className={'flex flex-end h-[520px] ml-16 border-2 border-amber-400'} />
+        <img src={props.img} alt="headshot" className={'flex flex-end h-[520px] ml-16 border-2 border-yellow-300'} />
       </div>
     </>
   );
