@@ -22,10 +22,10 @@ function App() {
       <AboutMeBlock
         title={'About Me'}
         description1={
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices.'
+          'I’m branching out - I’m learning to code. The past decade of my life has revolved around digital marketing, video production and photography. Now, I’m eager to grow my skillset and help build great tech solutions as a programmer.'
         }
         description2={
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices.'
+          'This change comes as an exploration, a challenge to myself, to never be caught standing still! Front-end developer loading…'
         }
         img={headshot}
       />
@@ -39,7 +39,7 @@ function App() {
           description={
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices.'
           }
-          title={'Project #1'}
+          title={'Play-This'}
           img={tempProjectImg}
           isImgOnLeft={false}
           displayLine={true}
@@ -51,7 +51,7 @@ function App() {
           description={
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices.'
           }
-          title={'Project #2'}
+          title={'Message Masher'}
           img={tempProjectImg}
           isImgOnLeft={true}
           displayLine={true}
@@ -60,7 +60,7 @@ function App() {
           description={
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices.'
           }
-          title={'Project #3'}
+          title={'Find Your Hat'}
           img={tempProjectImg}
           isImgOnLeft={false}
           displayLine={false}
