@@ -7,7 +7,7 @@ function AboutMeBlock(props: { title: string; description1: string; description2
             <span className={'text-yellow-300 font-extrabold'}>&gt; </span>
             {props.title}
           </h2>
-          <p className={'text-3xl my-8 font-regular'}>{props.description1}</p>
+          <p className={'text-2xl my-8'}>{props.description1}</p>
           <p className={'text-2xl'}>{props.description2}</p>
           <div className={'flex'}>
             <ol className={'text-2xl my-8'}>
