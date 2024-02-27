@@ -10,8 +10,6 @@ import ArrowElement from './components/ArrowElement';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 
-// need to fix font weight issues
-
 function App() {
   return (
     <>
