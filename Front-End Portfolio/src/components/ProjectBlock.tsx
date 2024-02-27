@@ -7,7 +7,7 @@ function ProjectBlock(props: {
 }) {
   return (
     <>
-      <div className={'flex justify-center mt-24' + (props.isImgOnLeft ? ' flex-row-reverse' : '')}>
+      <div className={'font-poppins flex justify-center mt-24' + (props.isImgOnLeft ? ' flex-row-reverse' : '')}>
         <div className={'w-[550px]' + (props.isImgOnLeft ? ' ml-16' : '')}>
           <h2 className="text-5xl font-semibold">{props.title}</h2>
           <p className={'text-2xl my-8'}>{props.description}</p>

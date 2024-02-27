@@ -1,7 +1,7 @@
 function AboutMeBlock(props: { title: string; description1: string; description2: string; img: string }) {
   return (
     <>
-      <div className={'flex justify-center'}>
+      <div className={'font-poppins flex justify-center'}>
         <div className={'w-[650px]'}>
           <h2 className="text-6xl font-semibold">
             <span className={'text-yellow-300 font-extrabold'}>&gt; </span>
@@ -9,6 +9,8 @@ function AboutMeBlock(props: { title: string; description1: string; description2
           </h2>
           <p className={'text-2xl my-8'}>{props.description1}</p>
           <p className={'text-2xl'}>{props.description2}</p>
+          <h1 className={'text-3xl font-semibold mt-8'}>My Tools:</h1>
+
           <div className={'flex'}>
             <ol className={'text-2xl my-8'}>
               <li>

@@ -25,7 +25,7 @@ function App() {
           'I’m branching out - I’m learning to code. The past decade of my life has revolved around digital marketing, video production and photography. Now, I’m eager to grow my skillset and help build great tech solutions as a programmer.'
         }
         description2={
-          'This change comes as an exploration, a challenge to myself, to never be caught standing still! Front-end developer loading…'
+          'This change comes as an exploration, a challenge to myself, to never stagnate! Front-end developer loading…'
         }
         img={headshot}
       />
@@ -37,7 +37,7 @@ function App() {
       <div className={'mt-56'}>
         <ProjectBlock
           description={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices.'
+            'Curate a Spotify playlist with your favourite tunes through this interactive web app! Give it a custom name and save it to your own Spotify account.'
           }
           title={'Play-This'}
           img={tempProjectImg}
@@ -49,7 +49,7 @@ function App() {
 
         <ProjectBlock
           description={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices.'
+            'Ever wanted to communicate via encrypted messages? Here’s a fun project that will mash your messages, or un-mash messages from your friends.'
           }
           title={'Message Masher'}
           img={tempProjectImg}
@@ -74,9 +74,7 @@ function App() {
       <div className="mb-[300px] mt-[150px]">
         <GetInTouch
           title={'Get in touch'}
-          bodyText={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices.'
-          }
+          bodyText={'If you’ve found my work interesting and would like to chat further, don’t hesitate.'}
           buttonText={'Say Hello!'}
         />
       </div>
