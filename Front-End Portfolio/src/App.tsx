@@ -8,12 +8,14 @@ import LandingPageBanner from './components/LandingPageBanner';
 import GetInTouch from './components/GetInTouch';
 import ArrowElement from './components/ArrowElement';
 import Footer from './components/Footer';
+import NavBar from './components/NavBar';
 
 // need to fix font weight issues
 
 function App() {
   return (
     <>
+      <NavBar heading1={'About Me'} heading2={'Code'} heading3={'Creative'} />
       <LandingPageBanner heading1={"Hi, I'm Peter"} heading2={'Welcome to my front-end portfolio'} />
       <div className={'-mt-[120px]'}>
         <ArrowElement />
