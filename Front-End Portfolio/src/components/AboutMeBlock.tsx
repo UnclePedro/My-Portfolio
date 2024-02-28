@@ -20,7 +20,7 @@ function AboutMeBlock(props: { title: string; description1: string; description2
                 <span className={'text-yellow-300 font-extrabold'}>&gt;</span> React
               </li>
               <li>
-                <span className={'text-yellow-300 font-extrabold'}>&gt;</span> Node.js
+                <span className={'text-yellow-300 font-extrabold'}>&gt;</span> CSS
               </li>
             </ol>
             <ol className={'text-2xl my-8 inline-flex flex-col pl-20'}>
@@ -36,7 +36,17 @@ function AboutMeBlock(props: { title: string; description1: string; description2
             </ol>
           </div>
         </div>
-        <img src={props.img} alt="headshot" className={'flex flex-end h-[520px] ml-16 border-2 border-yellow-300'} />
+        <div
+          className={
+            'bg-yellow-500 relative w-[300px] h-[500px] max-w-full flex justify-center shadow-lg shadow-yellow-500 rounded-xl'
+          }
+        >
+          <img
+            src={props.img}
+            alt="headshot"
+            className={'absolute w-full h-full ml-16 mix-blend-overlay hover:mix-blend-normal rounded-xl object-cover'}
+          />
+        </div>
       </div>
     </>
   );

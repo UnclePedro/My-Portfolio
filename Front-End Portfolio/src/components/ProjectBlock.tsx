@@ -18,7 +18,11 @@ function ProjectBlock(props: {
           <p className={'text-2xl my-8'}>{props.description}</p>
         </div>
         <div className={'flex flex-col'}>
-          <img src={props.img} alt="headshot" className={'flex flex-end h-[300px] border-2 border-amber-400'} />
+          <img
+            src={props.img}
+            alt="headshot"
+            className={'flex flex-end h-[300px] border-2 border-amber-400 rounded-lg'}
+          />
           {/* <hr
             className={
               'flex justify-center border-t border-4 mt-24 border-amber-400 w-[540px]' +
