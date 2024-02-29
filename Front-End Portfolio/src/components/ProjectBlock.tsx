@@ -7,7 +7,7 @@ function ProjectBlock(props: {
 }) {
   return (
     <>
-      <div className={'flex justify-center mt-14'}>
+      <div className={'flex justify-center mt-14'} id="projects">
         <div
           className={
             'font-poppins flex justify-center w-[1000px] bg-neutral-800 p-10 rounded-lg shadow-[rgb(251,191,36,0.5)_2px_2px_10px_4px] ' +
@@ -22,7 +22,7 @@ function ProjectBlock(props: {
             <img
               src={props.img}
               alt="headshot"
-              className={'flex flex-end h-[300px] object-cover aspect-square border-2 border-amber-400 rounded-lg'}
+              className={'flex flex-end h-[300px] object-cover aspect-square rounded-lg'}
             />
             {/* <hr
             className={
