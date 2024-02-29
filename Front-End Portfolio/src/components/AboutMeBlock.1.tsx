@@ -1,7 +1,7 @@
-function AboutMeBlock(props: { title: string; description1: string; description2: string; img: string }) {
+export function AboutMeBlock(props: { title: string; description1: string; description2: string; img: string }) {
   return (
     <>
-      <div className={'font-poppins flex justify-center'}>
+      <div className={'font-poppins flex justify-center'} name="about-me">
         <div className={'w-[650px]'}>
           <h2 className="text-6xl font-semibold">
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>
@@ -38,18 +38,16 @@ function AboutMeBlock(props: { title: string; description1: string; description2
         </div>
         <div
           className={
-            'flex justify-center bg-amber-400 relative w-[300px] h-[500px] shadow-lg shadow-yellow-500 rounded-xl object-cover ml-16 mt-10'
+            'bg-yellow-500 relative w-[300px] h-[500px] max-w-full flex justify-center shadow-lg shadow-yellow-500 rounded-xl'
           }
         >
           <img
             src={props.img}
             alt="headshot"
-            className={'w-full h-full opacity-50 hover:opacity-100 transition-opacity rounded-xl object-cover'}
+            className={'absolute w-full h-full ml-16 mix-blend-overlay hover:mix-blend-normal rounded-xl object-cover'}
           />
         </div>
       </div>
     </>
   );
 }
-
-export default AboutMeBlock;
