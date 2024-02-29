@@ -1,7 +1,7 @@
 function AboutMeBlock(props: { title: string; description1: string; description2: string; img: string }) {
   return (
     <>
-      <div className={'font-poppins flex justify-center'}>
+      <div className={'font-poppins flex justify-center'} id="about">
         <div className={'w-[650px]'}>
           <h2 className="text-6xl font-semibold">
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>

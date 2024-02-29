@@ -1,4 +1,4 @@
-function NavBar(props: { heading1: string; heading2: string; heading3: string }) {
+function NavBar(props: { heading1: string; heading2: string; heading3: string; heading4: string }) {
   return (
     <div className="flex flex-row w-full justify-end align-middle p-8 mr-4 absolute">
       <img src="/src/assets/favicon-p.png" className="w-24" alt="P favicon" />
@@ -6,6 +6,7 @@ function NavBar(props: { heading1: string; heading2: string; heading3: string })
         <button className="transition ease-in-out duration-500 hover:text-amber-400">{props.heading1}</button>
         <button className="transition ease-in-out duration-500 hover:text-amber-400">{props.heading2}</button>
         <button className="transition ease-in-out duration-500 hover:text-amber-400">{props.heading3}</button>
+        <button className="transition ease-in-out duration-500 hover:text-amber-400">{props.heading4}</button>
       </div>
     </div>
   );

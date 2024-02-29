@@ -6,18 +6,19 @@ import ProjectBlock from './components/ProjectBlock';
 import AboutMeBlock from './components/AboutMeBlock';
 import LandingPageBanner from './components/LandingPageBanner';
 import GetInTouch from './components/GetInTouch';
-import ArrowElement from './components/ArrowElement';
+// import ArrowElement from './components/ArrowElement';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
+import ScrollToHashElement from './components/ScrollToHashElement';
 
 function App() {
   return (
     <>
-      <NavBar heading1={'About Me'} heading2={'Code'} heading3={'Creative'} />
+      <NavBar heading1={'About Me'} heading2={'Code'} heading3={'Creative'} heading4={'Contact'} />
       <LandingPageBanner heading1={"Hi, I'm Peter"} heading2={'Welcome to my front-end portfolio'} />
-      <div className={'-mt-[120px]'}>
+      {/* <div className={'-mt-[120px]'}>
         <ArrowElement />
-      </div>
+      </div> */}
 
       <AboutMeBlock
         title={'About Me'}
@@ -30,11 +31,17 @@ function App() {
         img={headshot}
       />
 
-      <div>
+      {/* <div>
         <ArrowElement />
-      </div>
+      </div> */}
 
       <div className={'mt-56'}>
+        <div className={'text-6xl font-semibold font-poppins flex justify-center'}>
+          <h1>
+            <span className={'text-amber-400 font-extrabold'}>&gt; </span>Projects
+          </h1>
+        </div>
+
         <ProjectBlock
           description={
             'Curate a Spotify playlist with your favourite tunes through this interactive web app! Give it a custom name and save it to your own Spotify account.'
@@ -44,8 +51,6 @@ function App() {
           isImgOnLeft={false}
           displayLine={true}
         />
-
-        {/* could make the project block line separators animate side to side nicely */}
 
         <ProjectBlock
           description={
