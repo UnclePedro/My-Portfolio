@@ -31,10 +31,6 @@ function App() {
         img={headshot}
       />
 
-      {/* <div>
-        <ArrowElement />
-      </div> */}
-
       <div className={'mt-56'}>
         <div className={'text-6xl font-semibold font-poppins flex justify-center'}>
           <h1>
