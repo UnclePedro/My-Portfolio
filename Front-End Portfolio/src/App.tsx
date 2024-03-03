@@ -9,9 +9,9 @@ import GetInTouch from './components/GetInTouch';
 // import ArrowElement from './components/ArrowElement';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
-import ScrollToHashElement from './components/ScrollToHashElement';
-
+import { useRef } from 'react';
 function App() {
+  const aboutRef = useRef<HTMLDivElement>(null);
   return (
     <>
       <NavBar heading1={'About Me'} heading2={'Code'} heading3={'Creative'} heading4={'Contact'} />
@@ -29,6 +29,7 @@ function App() {
           'This change comes as an exploration, a challenge to myself, to never stagnate! Front-end developer loading…'
         }
         img={headshot}
+        aboutRef={aboutRef}
       />
 
       <div className={'mt-56'}>

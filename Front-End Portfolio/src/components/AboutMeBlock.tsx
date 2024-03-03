@@ -1,7 +1,16 @@
-function AboutMeBlock(props: { title: string; description1: string; description2: string; img: string }) {
+import { useRef } from 'react';
+
+function AboutMeBlock(props: {
+  title: string;
+  description1: string;
+  description2: string;
+  img: string;
+  aboutRef: React.RefObject<HTMLDivElement>; //idk about this needing to be a prop, think it does
+}) {
+  const aboutRef = useRef(null);
   return (
     <>
-      <div className={'font-poppins flex justify-center'} id="about">
+      <div className={'font-poppins flex justify-center'} ref={aboutRef}>
         <div className={'w-[650px]'}>
           <h2 className="text-6xl font-semibold">
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>

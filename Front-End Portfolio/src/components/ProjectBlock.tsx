@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+
 function ProjectBlock(props: {
   title: string;
   description: string;
@@ -5,9 +7,10 @@ function ProjectBlock(props: {
   isImgOnLeft: boolean;
   displayLine: boolean;
 }) {
+  const projectRef = useRef(null);
   return (
     <>
-      <div className={'flex justify-center mt-14'} id="projects">
+      <div className={'flex justify-center mt-14'} ref={projectRef}>
         <div
           className={
             'font-poppins flex justify-center w-[1000px] bg-neutral-800 p-10 rounded-lg shadow-[rgb(251,191,36,0.5)_2px_2px_10px_4px] ' +
