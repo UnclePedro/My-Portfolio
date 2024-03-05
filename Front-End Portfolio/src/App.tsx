@@ -10,15 +10,14 @@ import GetInTouch from './components/GetInTouch';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import ScrollToHashElement from './components/ScrollToHashElement';
+import VideoPlayer from './components/VideoPlayer';
+import VideoWall from './components/VideoWall';
 
 function App() {
   return (
     <>
       <NavBar heading1={'About Me'} heading2={'Code'} heading3={'Creative'} heading4={'Contact'} />
       <LandingPageBanner heading1={"Hi, I'm Peter"} heading2={'Welcome to my front-end portfolio'} />
-      {/* <div className={'-mt-[120px]'}>
-        <ArrowElement />
-      </div> */}
 
       <AboutMeBlock
         title={'About Me'}
@@ -71,16 +70,27 @@ function App() {
           displayLine={false}
         />
       </div>
-      {/* 
-      <div className="h-8">
-        <ArrowElement />
-      </div> */}
+
+      <div className={'mt-56'}>
+        <div className={'text-6xl font-semibold font-poppins flex justify-center'}>
+          <h1>
+            <span className={'text-amber-400 font-extrabold'}>&gt; </span>Creative
+          </h1>
+        </div>
+        <VideoWall
+          url1={'https://vimeo.com/manage/videos/392623163'}
+          url2={'https://vimeo.com/manage/videos/705603730'}
+          url3={'https://vimeo.com/manage/videos/642573090'}
+        />
+      </div>
 
       <div className="mb-[300px] mt-[150px]">
         <GetInTouch
           title={'Get in touch'}
           bodyText={'If you’ve found my work interesting and would like to chat further, don’t hesitate.'}
           buttonText={'Say Hello!'}
+          email={'📧 Peterforsyth10@gmail.com'}
+          phone={'☎️ 0401 222 910'}
         />
       </div>
 
