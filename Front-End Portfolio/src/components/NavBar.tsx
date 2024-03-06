@@ -1,14 +1,13 @@
 import { useRef } from 'react';
-import AboutMeBlock from './AboutMeBlock';
 
 function NavBar(props: { heading1: string; heading2: string; heading3: string; heading4: string }) {
-  // const aboutRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
 
-  // const executeScroll = () => {
-  //   if (aboutRef.current) {
-  //     aboutRef.current.scrollIntoView({ behavior: 'smooth' });
-  //   }
-  // };
+  const executeScroll = () => {
+    if (aboutRef.current) {
+      aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="flex flex-row w-full justify-end align-middle p-8 mr-4 absolute">

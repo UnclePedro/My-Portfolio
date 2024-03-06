@@ -1,6 +1,11 @@
 import { useRef } from 'react';
 
-function GetInTouch(props: { title: string; bodyText: string; buttonText: string }) {
+function GetInTouch(props: {
+  title: string;
+  bodyText: string;
+  buttonText: string;
+  contactRef: React.RefObject<HTMLDivElement>;
+}) {
   const contactRef = useRef(null);
   return (
     <div className={'font-poppins flex justify-center pt-32'} ref={contactRef}>
