@@ -9,12 +9,28 @@ import GetInTouch from './components/GetInTouch';
 // import ArrowElement from './components/ArrowElement';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
+import { useRef } from 'react';
 import VideoWall from './components/VideoWall';
 
+main
 function App() {
+  // refs for NavBar scroll feature
+  const aboutRef = useRef(null);
+  const projectRef = useRef(null);
+  // const creativeRef = useRef(null);
+  const contactRef = useRef(null);
   return (
     <>
-      <NavBar heading1={'About Me'} heading2={'Code'} heading3={'Creative'} heading4={'Contact'} />
+      <NavBar
+        heading1={'About Me'}
+        heading2={'Code'}
+        heading3={'Creative'}
+        heading4={'Contact'}
+        aboutRef={aboutRef}
+        projectRef={projectRef}
+        contactRef={contactRef}
+      />
+
       <LandingPageBanner heading1={"Hi, I'm Peter"} heading2={'Welcome to my front-end portfolio'} />
 
       <AboutMeBlock
@@ -26,13 +42,10 @@ function App() {
           'This change comes as an exploration, a challenge to myself, to never stagnate! Front-end developer loading…'
         }
         img={headshot}
+        aboutRef={aboutRef}
       />
 
-      {/* <div>
-        <ArrowElement />
-      </div> */}
-
-      <div className={'mt-56'}>
+      <div className={'mt-56'} ref={projectRef}>
         <div className={'text-6xl font-semibold font-poppins flex justify-center'}>
           <h1>
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>Projects
@@ -69,6 +82,7 @@ function App() {
         />
       </div>
 
+
       <div className={'mt-56'}>
         <div className={'text-6xl font-semibold font-poppins flex justify-center'}>
           <h1>
@@ -87,6 +101,7 @@ function App() {
           title={'Get in touch'}
           bodyText={'If you’ve found my work interesting and would like to chat further, don’t hesitate.'}
           buttonText={'Say Hello!'}
+          contactRef={contactRef}
           email={'📧 Peterforsyth10@gmail.com'}
           phone={'☎️ 0401 222 910'}
         />
