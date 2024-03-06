@@ -1,11 +1,18 @@
-import { useRef } from 'react';
-
-function NavBar(props: { heading1: string; heading2: string; heading3: string; heading4: string }) {
-  const aboutRef = useRef<HTMLDivElement>(null);
-
-  const executeScroll = () => {
-    if (aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+function NavBar(props: {
+  heading1: string;
+  heading2: string;
+  heading3: string;
+  heading4: string;
+  aboutRef: React.RefObject<HTMLDivElement>;
+  projectRef: React.RefObject<HTMLDivElement>;
+  contactRef: React.RefObject<HTMLDivElement>;
+}) {
+  const scrollToSection = (elementRef: React.RefObject<HTMLDivElement>) => {
+    if (elementRef.current != null) {
+      window.scrollTo({
+        top: elementRef.current.offsetTop - window.innerHeight * 0.2,
+        behavior: 'smooth',
+      });
     }
   };
 
@@ -14,25 +21,25 @@ function NavBar(props: { heading1: string; heading2: string; heading3: string; h
       <img src="/src/assets/favicon-p.png" className="w-24" alt="P favicon" />
       <div className={'text-2xl font-poppins flex flex-row w-full space-x-6 justify-end mr-12'}>
         <button
-          onClick={() => (window.location.pathname = 'about')}
+          onClick={() => scrollToSection(props.aboutRef)}
           className="transition ease-in-out duration-500 hover:text-amber-400"
         >
           {props.heading1}
         </button>
         <button
-          onClick={() => (window.location.pathname = 'code')}
+          onClick={() => scrollToSection(props.projectRef)}
           className="transition ease-in-out duration-500 hover:text-amber-400"
         >
           {props.heading2}
         </button>
-        <button
-          onClick={() => (window.location.pathname = 'creative')}
+        {/* <button
+          onClick={() => scrollToSection(props.creativeRef)}
           className="transition ease-in-out duration-500 hover:text-amber-400"
         >
           {props.heading3}
-        </button>
+        </button> */}
         <button
-          onClick={() => (window.location.pathname = 'contact')}
+          onClick={() => scrollToSection(props.contactRef)}
           className="transition ease-in-out duration-500 hover:text-amber-400"
         >
           {props.heading4}
