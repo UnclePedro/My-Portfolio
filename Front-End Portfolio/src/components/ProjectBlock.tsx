@@ -10,7 +10,7 @@ function ProjectBlock(props: {
       <div className={'flex justify-center mt-14'}>
         <div
           className={
-            'font-poppins flex justify-center w-[1000px] bg-neutral-800 p-10 rounded-lg shadow-[rgb(251,191,36,0.5)_2px_2px_10px_4px] ' +
+            'font-poppins flex justify-center w-[1000px] bg-neutral-800 p-10 rounded-lg shadow-[rgb(251,191,36,0.5)_2px_2px_10px_4px] hover:shadow-[rgb(251,191,36,0.5)_4px_4px_12px_6px] transition-shadow' +
             (props.isImgOnLeft ? ' flex-row-reverse' : '')
           }
         >
