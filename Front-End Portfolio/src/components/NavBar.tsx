@@ -8,6 +8,7 @@ function NavBar(props: {
   // creativeRef: React.RefObject<HTMLDivElement>;
   contactRef: React.RefObject<HTMLDivElement>;
 }) {
+  // needs to be seperated into helper function
   const scrollToSection = (elementRef: React.RefObject<HTMLDivElement>) => {
     if (elementRef.current != null) {
       window.scrollTo({
