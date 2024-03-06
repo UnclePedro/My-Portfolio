@@ -2,9 +2,10 @@ function GetInTouch(props: {
   title: string;
   bodyText: string;
   buttonText: string;
+  phone: string;
+  email: string;
   contactRef: React.RefObject<HTMLDivElement>;
 }) {
-function GetInTouch(props: { title: string; bodyText: string; buttonText: string; phone: string; email: string }) {
   return (
     <div className={'font-poppins flex justify-center pt-32'} ref={props.contactRef}>
       <div className={'w-[650px] flex-col align-center text-center'}>

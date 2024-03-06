@@ -12,12 +12,11 @@ import NavBar from './components/NavBar';
 import { useRef } from 'react';
 import VideoWall from './components/VideoWall';
 
-main
 function App() {
   // refs for NavBar scroll feature
   const aboutRef = useRef(null);
   const projectRef = useRef(null);
-  // const creativeRef = useRef(null);
+  const creativeRef = useRef(null);
   const contactRef = useRef(null);
   return (
     <>
@@ -28,6 +27,7 @@ function App() {
         heading4={'Contact'}
         aboutRef={aboutRef}
         projectRef={projectRef}
+        creativeRef={creativeRef}
         contactRef={contactRef}
       />
 
@@ -82,8 +82,7 @@ function App() {
         />
       </div>
 
-
-      <div className={'mt-56'}>
+      <div className={'mt-56'} ref={creativeRef}>
         <div className={'text-6xl font-semibold font-poppins flex justify-center'}>
           <h1>
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>Creative
