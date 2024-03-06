@@ -11,7 +11,9 @@ import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import { useRef } from 'react';
 function App() {
-  const aboutRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef(null);
+  const projectRef = useRef(null);
+  const contactRef = useRef(null);
   return (
     <>
       <NavBar heading1={'About Me'} heading2={'Code'} heading3={'Creative'} heading4={'Contact'} />
@@ -47,6 +49,7 @@ function App() {
           img={tempProjectImg}
           isImgOnLeft={false}
           displayLine={true}
+          projectRef={projectRef}
         />
 
         <ProjectBlock
@@ -57,6 +60,7 @@ function App() {
           img={tempProjectImg}
           isImgOnLeft={true}
           displayLine={true}
+          projectRef={projectRef}
         />
         <ProjectBlock
           description={
@@ -66,18 +70,16 @@ function App() {
           img={tempProjectImg}
           isImgOnLeft={false}
           displayLine={false}
+          projectRef={projectRef}
         />
       </div>
-      {/* 
-      <div className="h-8">
-        <ArrowElement />
-      </div> */}
 
       <div className="mb-[300px] mt-[150px]">
         <GetInTouch
           title={'Get in touch'}
           bodyText={'If you’ve found my work interesting and would like to chat further, don’t hesitate.'}
           buttonText={'Say Hello!'}
+          contactRef={contactRef}
         />
       </div>
 

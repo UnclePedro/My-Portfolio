@@ -6,6 +6,7 @@ function ProjectBlock(props: {
   img: string;
   isImgOnLeft: boolean;
   displayLine: boolean;
+  projectRef: React.RefObject<HTMLDivElement>;
 }) {
   const projectRef = useRef(null);
   return (

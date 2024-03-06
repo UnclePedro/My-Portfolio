@@ -5,7 +5,7 @@ function AboutMeBlock(props: {
   description1: string;
   description2: string;
   img: string;
-  aboutRef: React.RefObject<HTMLDivElement>; //idk about this needing to be a prop, think it does
+  aboutRef: React.RefObject<HTMLDivElement>;
 }) {
   const aboutRef = useRef(null);
   return (
