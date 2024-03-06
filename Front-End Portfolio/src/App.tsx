@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import { useRef } from 'react';
 function App() {
+  // refs for NavBar scroll feature
   const aboutRef = useRef(null);
   const projectRef = useRef(null);
   // const creativeRef = useRef(null);
@@ -26,6 +27,7 @@ function App() {
         projectRef={projectRef}
         contactRef={contactRef}
       />
+
       <LandingPageBanner heading1={"Hi, I'm Peter"} heading2={'Welcome to my front-end portfolio'} />
       {/* <div className={'-mt-[120px]'}>
         <ArrowElement />
