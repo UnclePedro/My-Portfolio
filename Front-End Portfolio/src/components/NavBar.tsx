@@ -5,7 +5,7 @@ function NavBar(props: {
   heading4: string;
   aboutRef: React.RefObject<HTMLDivElement>;
   projectRef: React.RefObject<HTMLDivElement>;
-  // creativeRef: React.RefObject<HTMLDivElement>;
+  creativeRef: React.RefObject<HTMLDivElement>;
   contactRef: React.RefObject<HTMLDivElement>;
 }) {
   // needs to be seperated into helper function
@@ -34,12 +34,12 @@ function NavBar(props: {
         >
           {props.heading2}
         </button>
-        {/* <button
+        <button
           onClick={() => scrollToSection(props.creativeRef)}
           className="transition ease-in-out duration-500 hover:text-amber-400"
         >
           {props.heading3}
-        </button> */}
+        </button>
         <button
           onClick={() => scrollToSection(props.contactRef)}
           className="transition ease-in-out duration-500 hover:text-amber-400"
