@@ -9,8 +9,6 @@ import GetInTouch from './components/GetInTouch';
 // import ArrowElement from './components/ArrowElement';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
-import ScrollToHashElement from './components/ScrollToHashElement';
-import VideoPlayer from './components/VideoPlayer';
 import VideoWall from './components/VideoWall';
 
 function App() {
