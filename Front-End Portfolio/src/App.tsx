@@ -13,10 +13,19 @@ import { useRef } from 'react';
 function App() {
   const aboutRef = useRef(null);
   const projectRef = useRef(null);
+  // const creativeRef = useRef(null);
   const contactRef = useRef(null);
   return (
     <>
-      <NavBar heading1={'About Me'} heading2={'Code'} heading3={'Creative'} heading4={'Contact'} />
+      <NavBar
+        heading1={'About Me'}
+        heading2={'Code'}
+        heading3={'Creative'}
+        heading4={'Contact'}
+        aboutRef={aboutRef}
+        projectRef={projectRef}
+        contactRef={contactRef}
+      />
       <LandingPageBanner heading1={"Hi, I'm Peter"} heading2={'Welcome to my front-end portfolio'} />
       {/* <div className={'-mt-[120px]'}>
         <ArrowElement />
@@ -34,7 +43,7 @@ function App() {
         aboutRef={aboutRef}
       />
 
-      <div className={'mt-56'}>
+      <div className={'mt-56'} ref={projectRef}>
         <div className={'text-6xl font-semibold font-poppins flex justify-center'}>
           <h1>
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>Projects
@@ -49,7 +58,6 @@ function App() {
           img={tempProjectImg}
           isImgOnLeft={false}
           displayLine={true}
-          projectRef={projectRef}
         />
 
         <ProjectBlock
@@ -60,7 +68,6 @@ function App() {
           img={tempProjectImg}
           isImgOnLeft={true}
           displayLine={true}
-          projectRef={projectRef}
         />
         <ProjectBlock
           description={
@@ -70,7 +77,6 @@ function App() {
           img={tempProjectImg}
           isImgOnLeft={false}
           displayLine={false}
-          projectRef={projectRef}
         />
       </div>
 

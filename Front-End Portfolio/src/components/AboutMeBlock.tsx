@@ -1,5 +1,3 @@
-import { useRef } from 'react';
-
 function AboutMeBlock(props: {
   title: string;
   description1: string;
@@ -7,10 +5,9 @@ function AboutMeBlock(props: {
   img: string;
   aboutRef: React.RefObject<HTMLDivElement>;
 }) {
-  const aboutRef = useRef(null);
   return (
     <>
-      <div className={'font-poppins flex justify-center'} ref={aboutRef}>
+      <div className={'font-poppins flex justify-center'} ref={props.aboutRef}>
         <div className={'w-[650px]'}>
           <h2 className="text-6xl font-semibold">
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>
