@@ -1,6 +1,10 @@
-function LandingPageBanner(props: { heading1: string; heading2: string }) {
+function LandingPageBanner(props: {
+  landingBannerRef: React.RefObject<HTMLDivElement>;
+  heading1: string;
+  heading2: string;
+}) {
   return (
-    <div>
+    <div ref={props.landingBannerRef}>
       <header className={'font-poppins flex flex-col justify-center items-center p-4 w-full h-screen'}>
         <h1 className={'text-8xl font-bold'}>
           {props.heading1}
