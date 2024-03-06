@@ -14,6 +14,7 @@ import VideoWall from './components/VideoWall';
 
 function App() {
   // refs for NavBar scroll feature
+  const landingBannerRef = useRef(null);
   const aboutRef = useRef(null);
   const projectRef = useRef(null);
   const creativeRef = useRef(null);
@@ -25,13 +26,18 @@ function App() {
         heading2={'Code'}
         heading3={'Creative'}
         heading4={'Contact'}
+        landingBannerRef={landingBannerRef}
         aboutRef={aboutRef}
         projectRef={projectRef}
         creativeRef={creativeRef}
         contactRef={contactRef}
       />
 
-      <LandingPageBanner heading1={"Hi, I'm Peter"} heading2={'Welcome to my front-end portfolio'} />
+      <LandingPageBanner
+        heading1={"Hi, I'm Peter"}
+        heading2={'Welcome to my front-end portfolio'}
+        landingBannerRef={landingBannerRef}
+      />
 
       <AboutMeBlock
         title={'About Me'}

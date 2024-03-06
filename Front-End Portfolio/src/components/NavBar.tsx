@@ -1,8 +1,11 @@
+import { useState, useEffect } from 'react';
+
 function NavBar(props: {
   heading1: string;
   heading2: string;
   heading3: string;
   heading4: string;
+  landingBannerRef: React.RefObject<HTMLDivElement>;
   aboutRef: React.RefObject<HTMLDivElement>;
   projectRef: React.RefObject<HTMLDivElement>;
   creativeRef: React.RefObject<HTMLDivElement>;
@@ -17,6 +20,26 @@ function NavBar(props: {
       });
     }
   };
+
+  // logic for scrollToTop
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+    const scrollToTop = () => {
+      if (window.scrollY > 700) {
+        setShowBackToTop(true);
+      } else {
+        setShowBackToTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', scrollToTop);
+
+    // *** Need to understand the below - Clean up the event listener
+    return () => {
+      window.removeEventListener('scroll', scrollToTop);
+    };
+  });
 
   return (
     <div className="flex flex-row w-full justify-end align-middle p-8 mr-4 absolute">
@@ -46,6 +69,16 @@ function NavBar(props: {
         >
           {props.heading4}
         </button>
+        <div className={'fixed'}>
+          {showBackToTop && (
+            <button
+              className="transition ease-in-out duration-500 hover:text-amber-400"
+              onClick={() => scrollToSection(props.landingBannerRef)}
+            >
+              Back to top
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );
