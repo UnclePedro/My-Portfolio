@@ -5,6 +5,7 @@ function NavBar(props: {
   heading4: string;
   aboutRef: React.RefObject<HTMLDivElement>;
   projectRef: React.RefObject<HTMLDivElement>;
+  // creativeRef: React.RefObject<HTMLDivElement>;
   contactRef: React.RefObject<HTMLDivElement>;
 }) {
   const scrollToSection = (elementRef: React.RefObject<HTMLDivElement>) => {
