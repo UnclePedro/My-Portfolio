@@ -38,18 +38,18 @@ function App() {
         heading2={'Welcome to my front-end portfolio'}
         landingBannerRef={landingBannerRef}
       />
-
-      <AboutMeBlock
-        title={'About Me'}
-        description1={
-          'I’m branching out - I’m learning to code. The past decade of my life has revolved around digital marketing, video production and photography. Now, I’m eager to grow my skillset and help build great tech solutions as a programmer.'
-        }
-        description2={
-          'This change comes as an exploration, a challenge to myself, to never stagnate! Front-end developer loading…'
-        }
-        img={headshot}
-        aboutRef={aboutRef}
-      />
+      <div className={'pt-24'} ref={aboutRef}>
+        <AboutMeBlock
+          title={'About Me'}
+          description1={
+            'I’m branching out - I’m learning to code. The past decade of my life has revolved around digital marketing, video production and photography. Now, I’m eager to grow my skillset and help build great tech solutions as a programmer.'
+          }
+          description2={
+            'This change comes as an exploration, a challenge to myself, to never stagnate! Front-end developer loading…'
+          }
+          img={headshot}
+        />
+      </div>
 
       <div className={'mt-56'} ref={projectRef}>
         <div className={'text-6xl font-semibold font-poppins flex justify-center'}>
@@ -101,12 +101,11 @@ function App() {
         />
       </div>
 
-      <div className="mb-[300px] mt-[150px]">
+      <div className="mb-[300px] mt-[150px]" ref={contactRef}>
         <GetInTouch
           title={'Get in touch'}
           bodyText={'If you’ve found my work interesting and would like to chat further, don’t hesitate.'}
           buttonText={'Say Hello!'}
-          contactRef={contactRef}
           email={'📧 Peterforsyth10@gmail.com'}
           phone={'☎️ 0401 222 910'}
         />

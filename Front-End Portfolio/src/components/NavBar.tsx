@@ -15,7 +15,7 @@ function NavBar(props: {
   const scrollToSection = (elementRef: React.RefObject<HTMLDivElement>) => {
     if (elementRef.current != null) {
       window.scrollTo({
-        top: elementRef.current.offsetTop - window.innerHeight * 0.2,
+        top: elementRef.current.offsetTop - window.innerHeight * 0.1,
         behavior: 'smooth',
       });
     }
@@ -72,7 +72,7 @@ function NavBar(props: {
         <div className={'fixed'}>
           {showBackToTop && (
             <button
-              className="transition ease-in-out duration-500 hover:text-amber-400"
+              className="transition ease-in-out duration-500 hover:text-amber-400 ${showBackToTop ? 'opacity-100' : 'opacity-0 hidden'"
               onClick={() => scrollToSection(props.landingBannerRef)}
             >
               Back to top
