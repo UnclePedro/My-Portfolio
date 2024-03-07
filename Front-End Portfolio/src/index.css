@@ -5,6 +5,23 @@
 
 body {
   /* font-family: Poppins; */
-  background-color: rgb(26, 26, 26);
+  background: rgb(20, 20, 20);
+  background: linear-gradient(135deg, rgba(20, 20, 20, 1) 0%, rgba(52, 52, 52, 1) 100%);
   color: rgb(255, 255, 255);
+}
+
+.animation-reverse-bounce:hover {
+  animation: reverse-bounce 0.8s infinite;
+}
+
+@keyframes reverse-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+  50% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
 }
