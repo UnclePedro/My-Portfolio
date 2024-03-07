@@ -41,8 +41,9 @@ function NavBar(props: {
     };
   });
 
+  // need to make hamburger menu for small screen
   return (
-    <div className="flex flex-row w-full justify-end align-middle p-8 mr-4 absolute">
+    <div className="hidden md:flex flex-row w-full justify-end align-middle p-8 mr-4 absolute">
       <img src="/src/assets/favicon-p.png" className="w-24 animation-reverse-bounce" alt="P favicon" />
       <div className={'text-2xl font-poppins flex flex-row w-full space-x-6 justify-end mr-12'}>
         <button
