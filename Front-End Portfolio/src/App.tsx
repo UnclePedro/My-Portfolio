@@ -1,7 +1,8 @@
 //import { useState } from 'react';
 //import styles from './App.module.css';
-import headshot from '../src/assets/temp-headshot.jpeg';
+import headshot from '../src/assets/headshot-3.jpg';
 import tempProjectImg from '../src/assets/project-placeholder.png';
+import playThisProjectImg from '../src/assets/play-this-project.png';
 import ProjectBlock from './components/ProjectBlock';
 import AboutMeBlock from './components/AboutMeBlock';
 import LandingPageBanner from './components/LandingPageBanner';
@@ -40,7 +41,7 @@ function App() {
       />
       <div className={'pt-24'} ref={aboutRef}>
         <AboutMeBlock
-          title={'About Me'}
+          title={'Who am I?'}
           description1={
             'I’m branching out - I’m learning to code. The past decade of my life has revolved around digital marketing, video production and photography. Now, I’m eager to grow my skillset and help build great tech solutions as a programmer.'
           }
@@ -63,7 +64,7 @@ function App() {
             'Curate a Spotify playlist with your favourite tunes through this interactive web app! Give it a custom name and save it to your own Spotify account.'
           }
           title={'Play-This'}
-          img={tempProjectImg}
+          img={playThisProjectImg}
           isImgOnLeft={false}
           displayLine={true}
         />
@@ -103,11 +104,9 @@ function App() {
 
       <div className="mb-[300px] mt-[150px]" ref={contactRef}>
         <GetInTouch
-          title={'Get in touch'}
-          bodyText={'If you’ve found my work interesting and would like to chat further, don’t hesitate.'}
+          title={'My other things'}
+          bodyText={'If you’d like to chat on LinkedIn, peruse my photography or peep my code, jump into the links.'}
           buttonText={'Say Hello!'}
-          email={'📧 Peterforsyth10@gmail.com'}
-          phone={'☎️ 0401 222 910'}
         />
       </div>
 

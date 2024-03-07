@@ -43,7 +43,7 @@ function NavBar(props: {
 
   return (
     <div className="flex flex-row w-full justify-end align-middle p-8 mr-4 absolute">
-      <img src="/src/assets/favicon-p.png" className="w-24" alt="P favicon" />
+      <img src="/src/assets/favicon-p.png" className="w-24 animation-reverse-bounce" alt="P favicon" />
       <div className={'text-2xl font-poppins flex flex-row w-full space-x-6 justify-end mr-12'}>
         <button
           onClick={() => scrollToSection(props.aboutRef)}
