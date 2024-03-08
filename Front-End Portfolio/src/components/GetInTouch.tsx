@@ -6,9 +6,12 @@ import githubIcon from '../../src/assets/icons/github.svg';
 
 function GetInTouch(props: { title: string; bodyText: string; buttonText: string }) {
   return (
-    <div className={'font-poppins flex justify-center pt-48'}>
+    <div className={'font-poppins flex justify-center pt-48 m-12'}>
       <div className={'w-[650px] flex-col align-center text-center'}>
-        <h2 className="text-6xl font-semibold">{props.title}</h2>
+        <h2 className="text-5xl sm:text-6xl font-semibold">
+          <span className={'text-amber-400 font-extrabold'}>&gt; </span>
+          {props.title}
+        </h2>
         <p className={'text-2xl my-8'}>{props.bodyText}</p>
         <div className={'flex justify-center'}>
           <Icon img={linkedin} href={'https://www.linkedin.com/in/peter-forsyth-a89590175/'} alt={'linkedIn'} />
