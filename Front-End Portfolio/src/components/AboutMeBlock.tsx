@@ -38,7 +38,7 @@ function AboutMeBlock(props: { title: string; description1: string; description2
         </div>
         <div
           className={
-            'hidden sm:flex justify-center bg-amber-400  w-[300px] h-[500px] shadow-lg hover:shadow-none transition-shadow shadow-yellow-500 rounded-xl object-cover ml-16 mt-10'
+            'hidden sm:flex justify-center bg-amber-400  w-[300px] h-[500px] shadow-goldenMedium hover:shadow-none transition-shadow rounded-xl object-cover ml-16 mt-10'
           }
         >
           <img
