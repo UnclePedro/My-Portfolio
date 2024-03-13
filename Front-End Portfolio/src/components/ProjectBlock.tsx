@@ -14,15 +14,15 @@ function ProjectBlock(props: {
             (props.isImgOnLeft ? ' flex-row-reverse' : '')
           }
         >
-          <div className={'max-w-[550px]' + (props.isImgOnLeft ? ' ml-16' : '')}>
-            <h2 className="text-5xl font-semibold">{props.title}</h2>
-            <p className={'text-2xl my-8'}>{props.description}</p>
+          <div className={'max-w-[550px]'}>
+            <h2 className="text-3xl md:text-4xl font-semibold">{props.title}</h2>
+            <p className={'text-lg md:text-2xl my-6'}>{props.description}</p>
           </div>
-          <div className={'flex flex-col'}>
+          <div className={'hidden xl:flex flex-col' + (props.isImgOnLeft ? ' mr-12' : '')}>
             <img
               src={props.img}
               alt="headshot"
-              className={'flex flex-end h-[300px] object-cover aspect-square rounded-lg'}
+              className={'hidden xl:flex flex-end h-[300px] object-cover aspect-square rounded-lg'}
             />
             {/* <hr
             className={
