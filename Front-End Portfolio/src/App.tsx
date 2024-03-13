@@ -53,7 +53,7 @@ function App() {
       </div>
 
       <div className={'mt-56'} ref={projectRef}>
-        <div className={'text-6xl font-semibold font-poppins flex justify-center'}>
+        <div className={'text-5xl md:text-6xl font-semibold font-poppins flex justify-center'}>
           <h1>
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>Projects
           </h1>
@@ -90,7 +90,7 @@ function App() {
       </div>
 
       <div className={'mt-56'} ref={creativeRef}>
-        <div className={'text-6xl font-semibold font-poppins flex justify-center'}>
+        <div className={'text-5xl md:text-6xl font-semibold font-poppins flex justify-center'}>
           <h1>
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>Creative
           </h1>
