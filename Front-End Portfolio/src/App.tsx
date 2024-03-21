@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <NavBar
-        heading1={'About Me'}
+        heading1={'About'}
         heading2={'Code'}
         heading3={'Creative'}
         heading4={'Contact'}

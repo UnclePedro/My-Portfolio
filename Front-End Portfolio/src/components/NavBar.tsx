@@ -43,9 +43,13 @@ function NavBar(props: {
 
   // need to make hamburger menu for small screen
   return (
-    <div className="hidden md:flex flex-row w-full justify-end align-middle p-8 mr-4 absolute">
-      <img src="/src/assets/favicon-p.png" className="w-24 animation-reverse-bounce" alt="P favicon" />
-      <div className={'text-2xl font-poppins flex flex-row w-full space-x-6 justify-end mr-12'}>
+    <div className="flex w-full align-middle p-8 mr-4 absolute">
+      <div className={'flex justify-between w-full'}>
+        <img src="/src/assets/favicon-p.png" className="w-16 md:w-24 animation-reverse-bounce" alt="P favicon" />
+        <img src="/src/assets/icons/hamburger.svg" className="flex justify-end w-12 md:hidden" alt="Hamburger" />
+      </div>
+
+      <div className={'hidden md:flex text-2xl font-poppins w-full space-x-6 justify-end mr-12'}>
         <button
           onClick={() => scrollToSection(props.aboutRef)}
           className="transition ease-in-out duration-500 hover:text-amber-400"
