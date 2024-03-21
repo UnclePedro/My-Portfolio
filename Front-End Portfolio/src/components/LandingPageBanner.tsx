@@ -11,7 +11,7 @@ function LandingPageBanner(props: {
           <span className={'text-amber-400'}>.</span>
         </h1>
         <p className={'text-xl md:text-4xl pt-6'}>
-          <span className={'text-amber-400 font-extrabold animate-pulse'}>&gt;</span> {props.heading2}
+          <span className={'text-amber-400 font-extrabold'}>&gt;</span> {props.heading2}
         </p>
       </header>
     </div>
