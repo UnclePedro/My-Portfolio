@@ -36,16 +36,18 @@ function AboutMeBlock(props: { title: string; description1: string; description2
             </ol>
           </div>
         </div>
-        <div
-          className={
-            'hidden md:flex justify-center bg-amber-400  w-[300px] h-[500px] shadow-goldenMedium hover:shadow-none transition-shadow rounded-xl object-cover ml-16 mt-10'
-          }
-        >
-          <img
-            src={props.img}
-            alt="headshot"
-            className={'w-full h-full opacity-50 hover:opacity-100 transition-opacity rounded-xl object-cover'}
-          />
+        <div className={''}>
+          <div
+            className={
+              'hidden lg:flex justify-center bg-amber-400  w-[300px] h-[500px] shadow-goldenMedium hover:shadow-none transition-shadow rounded-xl object-cover ml-16 mt-10'
+            }
+          >
+            <img
+              src={props.img}
+              alt="headshot"
+              className={'opacity-50 hover:opacity-100 transition-opacity rounded-xl object-cover'}
+            />
+          </div>
         </div>
       </div>
     </>
