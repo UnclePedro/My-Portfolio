@@ -60,7 +60,7 @@ function NavBar(props: {
   return (
     <div className="flex w-full p-8 absolute" onScroll={toggleHamburger}>
       <div className={'flex justify-between w-full'}>
-        <img src="/src/assets/favicon-p.png" className="w-16 md:w-24 animation-reverse-bounce" alt="P favicon" />
+        <img src="/src/assets/favicon-p.png" className="w-14 md:w-24 animation-reverse-bounce" alt="P favicon" />
         <button onClick={toggleHamburger}>
           <img
             src="/src/assets/icons/hamburger.svg"
