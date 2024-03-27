@@ -1,6 +1,6 @@
 //import { useState } from 'react';
 //import styles from './App.module.css';
-import headshot from '../src/assets/headshot-3.jpg';
+import headshot from '../src/assets/headshot-assets/headshot-square.png';
 import tempProjectImg from '../src/assets/project-placeholder.png';
 import playThisProjectImg from '../src/assets/play-this-project.png';
 import ProjectBlock from './components/ProjectBlock';
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <NavBar
-        heading1={'About Me'}
+        heading1={'About'}
         heading2={'Code'}
         heading3={'Creative'}
         heading4={'Contact'}
@@ -39,7 +39,7 @@ function App() {
         heading2={'Welcome to my front-end portfolio'}
         landingBannerRef={landingBannerRef}
       />
-      <div className={'pt-24'} ref={aboutRef}>
+      <div className={'md:pt-24'} ref={aboutRef}>
         <AboutMeBlock
           title={'Who am I?'}
           description1={
@@ -52,8 +52,8 @@ function App() {
         />
       </div>
 
-      <div className={'mt-56'} ref={projectRef}>
-        <div className={'text-6xl font-semibold font-poppins flex justify-center'}>
+      <div className={'mt-24 md:mt-56'} ref={projectRef}>
+        <div className={'text-5xl md:text-6xl font-semibold font-poppins flex justify-center'}>
           <h1>
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>Projects
           </h1>
@@ -66,31 +66,34 @@ function App() {
           title={'Play-This'}
           img={playThisProjectImg}
           isImgOnLeft={false}
-          displayLine={true}
+          projectLink={''}
+          githubLink={'https://github.com/UnclePedro/Spotify-Playlist-App'}
         />
 
         <ProjectBlock
           description={
-            'Ever wanted to communicate via encrypted messages? Here’s a fun project that will mash your messages, or un-mash messages from your friends.'
+            'Ever wanted to communicate via encrypted messages? Here’s a fun app that will mash your messages, or un-mash messages from your friends.'
           }
           title={'Message Masher'}
           img={tempProjectImg}
           isImgOnLeft={true}
-          displayLine={true}
+          projectLink={''}
+          githubLink={'https://github.com/UnclePedro/message-masher'}
         />
         <ProjectBlock
           description={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices.'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
           }
           title={'Find Your Hat'}
           img={tempProjectImg}
           isImgOnLeft={false}
-          displayLine={false}
+          projectLink={''}
+          githubLink={''}
         />
       </div>
 
-      <div className={'mt-56'} ref={creativeRef}>
-        <div className={'text-6xl font-semibold font-poppins flex justify-center'}>
+      <div className={'mt-32 md:mt-56'} ref={creativeRef}>
+        <div className={'text-5xl md:text-6xl font-semibold font-poppins flex justify-center'}>
           <h1>
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>Creative
           </h1>
@@ -102,7 +105,7 @@ function App() {
         />
       </div>
 
-      <div className="mb-[300px] mt-[150px]" ref={contactRef}>
+      <div className="mb-[300px] mt-[160px]" ref={contactRef}>
         <GetInTouch
           title={'My other things'}
           bodyText={'If you’d like to chat on LinkedIn, peruse my photography or peep my code, jump into the links.'}
