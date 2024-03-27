@@ -92,18 +92,18 @@ function App() {
         />
       </div>
 
-      <div className={'mt-32 md:mt-56'} ref={creativeRef}>
+      {/* <div className={'mt-32 md:mt-56'} ref={creativeRef}>
         <div className={'text-5xl md:text-6xl font-semibold font-poppins flex justify-center'}>
           <h1>
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>Creative
           </h1>
         </div>
-        {/* <VideoWall
+        <VideoWall
           url1={'https://vimeo.com/manage/videos/392623163'}
           url2={'https://vimeo.com/manage/videos/705603730'}
           url3={'https://vimeo.com/manage/videos/642573090'}
-        /> */}
-      </div>
+        />
+      </div> */}
 
       <div className="mb-[300px] mt-[160px]" ref={contactRef}>
         <GetInTouch
