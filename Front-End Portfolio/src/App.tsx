@@ -77,7 +77,7 @@ function App() {
           title={'Message Masher'}
           img={tempProjectImg}
           isImgOnLeft={true}
-          projectLink={''}
+          projectLink={'https://message-masher.vercel.app/'}
           githubLink={'https://github.com/UnclePedro/message-masher'}
         />
         <ProjectBlock
