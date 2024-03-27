@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import pFavicon from '../../src/assets/favicon-p.png';
+import hamburger from '../../src/assets/icons/hamburger.svg';
 
 function NavBar(props: {
   heading1: string;
@@ -60,10 +62,10 @@ function NavBar(props: {
   return (
     <div className="flex w-full p-8 absolute" onScroll={toggleHamburger}>
       <div className={'flex justify-between w-full'}>
-        <img src="/src/assets/favicon-p.png" className="w-14 md:w-24 animation-reverse-bounce" alt="P favicon" />
+        <img src={pFavicon} className="w-14 md:w-24 animation-reverse-bounce" alt="P favicon" />
         <button onClick={toggleHamburger}>
           <img
-            src="/src/assets/icons/hamburger.svg"
+            src={hamburger}
             className="justify-end right-8 top-10 fixed w-12 bg-neutral-800 rounded-xl p-2 md:hidden"
             alt="Hamburger"
           />
