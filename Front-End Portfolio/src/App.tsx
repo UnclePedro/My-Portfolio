@@ -98,11 +98,11 @@ function App() {
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>Creative
           </h1>
         </div>
-        <VideoWall
+        {/* <VideoWall
           url1={'https://vimeo.com/manage/videos/392623163'}
           url2={'https://vimeo.com/manage/videos/705603730'}
           url3={'https://vimeo.com/manage/videos/642573090'}
-        />
+        /> */}
       </div>
 
       <div className="mb-[300px] mt-[160px]" ref={contactRef}>
