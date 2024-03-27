@@ -1,6 +1,6 @@
 //import { useState } from 'react';
 //import styles from './App.module.css';
-import headshot from '../src/assets/headshot-3.jpg';
+import headshot from '../src/assets/headshot-assets/headshot-square.png';
 import tempProjectImg from '../src/assets/project-placeholder.png';
 import playThisProjectImg from '../src/assets/play-this-project.png';
 import ProjectBlock from './components/ProjectBlock';
