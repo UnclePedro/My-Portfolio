@@ -14,7 +14,7 @@ function AboutMeBlock(props: { title: string; description1: string; description2
           <div className={'flex'}>
             <ol className={'text-lg md:text-2xl my-8'}>
               <li>
-                <span className={'text-amber-400 font-extrabold'}>&gt;</span> JavaScript
+                <span className={'text-amber-400 font-extrabold'}>&gt;</span> TypeScript
               </li>
               <li>
                 <span className={'text-amber-400 font-extrabold'}>&gt;</span> React
@@ -25,7 +25,7 @@ function AboutMeBlock(props: { title: string; description1: string; description2
             </ol>
             <ol className={'text-lg md:text-2xl my-8 inline-flex flex-col pl-20'}>
               <li>
-                <span className={'text-amber-400 font-extrabold'}>&gt;</span> TypeScript
+                <span className={'text-amber-400 font-extrabold'}>&gt;</span> GitHub
               </li>
               <li>
                 <span className={'text-amber-400 font-extrabold'}>&gt;</span> Tailwind
