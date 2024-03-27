@@ -5,8 +5,8 @@ function LandingPageBanner(props: {
 }) {
   return (
     <div ref={props.landingBannerRef}>
-      <header className={'font-poppins flex flex-col justify-center h-screen text-center p-6 md:p-12'}>
-        <h1 className={'text-6xl md:text-8xl font-bold'}>
+      <header className={'font-poppins flex flex-col justify-center h-screen text-center p-12'}>
+        <h1 className={'text-5xl md:text-8xl font-bold'}>
           {props.heading1}
           <span className={'text-amber-400'}>.</span>
         </h1>
