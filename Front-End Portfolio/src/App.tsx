@@ -74,10 +74,10 @@ function App() {
           description={
             'Curate a Spotify playlist with your favourite tunes through this interactive web app! Give it a custom name and save it to your own Spotify account.'
           }
-          title={'Play-This (under development)'}
+          title={'Play-This (in development)'}
           img={playThisProjectImg}
           isImgOnLeft={false}
-          projectLink={''}
+          projectLink={'https://github.com/UnclePedro/Spotify-Playlist-App'}
           githubLink={'https://github.com/UnclePedro/Spotify-Playlist-App'}
         />
         {/* <ProjectBlock
@@ -92,7 +92,7 @@ function App() {
         /> */}
       </div>
 
-      {/* <div className={'mt-32 md:mt-56'} ref={creativeRef}>
+      <div className={'mt-32 md:mt-56'} ref={creativeRef}>
         <div className={'text-5xl md:text-6xl font-semibold font-poppins flex justify-center'}>
           <h1>
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>Creative
@@ -103,9 +103,9 @@ function App() {
           url2={'https://vimeo.com/manage/videos/705603730'}
           url3={'https://vimeo.com/manage/videos/642573090'}
         />
-      </div> */}
+      </div>
 
-      <div className="mb-[300px] mt-[160px]" ref={contactRef}>
+      <div className="mb-[300px] mt-[100px]" ref={contactRef}>
         <GetInTouch
           title={'My other things'}
           bodyText={'If you’d like to chat on LinkedIn, peruse my photography or peep my code, jump into the links.'}
