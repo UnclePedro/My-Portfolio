@@ -39,7 +39,7 @@ function App() {
         heading2={'Welcome to my front-end portfolio'}
         landingBannerRef={landingBannerRef}
       />
-      <div className={'md:pt-24'} ref={aboutRef}>
+      <div className={'md:pt-20'} ref={aboutRef}>
         <AboutMeBlock
           title={'Who am I?'}
           description1={

@@ -15,7 +15,7 @@ function ProjectBlock(props: {
       <div className={'flex justify-center mt-14'}>
         <div
           className={
-            'w-9/12 xl:w-[1000px] font-poppins flex justify-center bg-neutral-900 p-10 rounded-lg shadow-goldenSmall hover:shadow-goldenMedium transition-shadow duration-300' +
+            'w-9/12 xl:w-[1000px] font-poppins flex justify-center bg-neutral-900 p-10 rounded-lg shadow-goldenSmall md:hover:shadow-goldenMedium transition-shadow duration-300' +
             (props.isImgOnLeft ? ' flex-row-reverse' : '')
           }
         >
