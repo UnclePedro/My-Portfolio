@@ -1,4 +1,4 @@
-import ReactPlayer from 'react-player/lazy';
+import ReactPlayer from 'react-player';
 
 function VideoPlayer(props: { url: string; width: string; height: string }) {
   return (
