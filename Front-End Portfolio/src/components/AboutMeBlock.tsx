@@ -39,13 +39,13 @@ function AboutMeBlock(props: { title: string; description1: string; description2
 
         <div
           className={
-            'flex justify-center bg-amber-400 w-[300px] h-[300px] lg:h-[450px] shadow-goldenMedium hover:shadow-none transition-shadow rounded-xl lg:ml-16 lg:mt-24'
+            'flex justify-center bg-amber-400 w-[300px] h-[300px] lg:h-[450px] shadow-none md:shadow-goldenMedium hover:shadow-none transition-shadow rounded-xl lg:ml-16 lg:mt-24'
           }
         >
           <img
             src={props.img}
             alt="headshot"
-            className={'opacity-50 hover:opacity-100 transition-opacity rounded-xl object-cover'}
+            className={'opacity-100 md:opacity-50 hover:opacity-100 transition-opacity rounded-xl object-cover'}
           />
         </div>
       </div>
