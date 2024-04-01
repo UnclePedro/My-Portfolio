@@ -5,7 +5,7 @@ import hamburger from '../../src/assets/icons/hamburger.svg';
 function NavBar(props: {
   heading1: string;
   heading2: string;
-  heading3: string;
+  // heading3: string;
   heading4: string;
   landingBannerRef: React.RefObject<HTMLDivElement>;
   aboutRef: React.RefObject<HTMLDivElement>;
@@ -85,12 +85,12 @@ function NavBar(props: {
           >
             {props.heading2}
           </button>
-          <button
+          {/* <button
             onClick={() => scrollToSection(props.creativeRef)}
             className="transition ease-in-out duration-500 hover:text-amber-400 pt-2"
           >
             {props.heading3}
-          </button>
+          </button> */}
           <button
             onClick={() => scrollToSection(props.contactRef)}
             className="transition ease-in-out duration-500 hover:text-amber-400 pt-2"
@@ -122,12 +122,12 @@ function NavBar(props: {
         >
           {props.heading2}
         </button>
-        <button
+        {/* <button
           onClick={() => scrollToSection(props.creativeRef)}
           className="transition ease-in-out duration-500 hover:text-amber-400"
         >
           {props.heading3}
-        </button>
+        </button> */}
         <button
           onClick={() => scrollToSection(props.contactRef)}
           className="transition ease-in-out duration-500 hover:text-amber-400 "
