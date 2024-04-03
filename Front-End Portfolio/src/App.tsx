@@ -11,7 +11,7 @@ import GetInTouch from './components/GetInTouch';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import { useRef } from 'react';
-// import VideoWall from './components/VideoWall';
+import VideoWall from './components/VideoWall';
 
 function App() {
   // refs for NavBar scroll feature
@@ -92,7 +92,7 @@ function App() {
         /> */}
       </div>
 
-      {/* <div className={'mt-32 md:mt-56'} ref={creativeRef}>
+      <div className={'mt-32 md:mt-56'} ref={creativeRef}>
         <div className={'text-5xl md:text-6xl font-semibold font-poppins flex justify-center'}>
           <h1>
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>Creative
@@ -103,7 +103,7 @@ function App() {
           url2={'https://vimeo.com/manage/videos/705603730'}
           url3={'https://vimeo.com/manage/videos/642573090'}
         />
-      </div> */}
+      </div>
 
       <div className="mb-[300px] mt-[100px]" ref={contactRef}>
         <GetInTouch
