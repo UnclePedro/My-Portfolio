@@ -25,7 +25,7 @@ function App() {
       <NavBar
         heading1={'About'}
         heading2={'Code'}
-        // heading3={'Creative'}
+        heading3={'Creative'}
         heading4={'Contact'}
         landingBannerRef={landingBannerRef}
         aboutRef={aboutRef}
