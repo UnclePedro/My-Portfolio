@@ -93,7 +93,7 @@ function App() {
       </div>
 
       <div className={'mt-32 md:mt-56'} ref={creativeRef}>
-        <div className={'text-5xl md:text-6xl font-semibold font-poppins flex justify-center'}>
+        <div className={'text-5xl mb-8 md:text-6xl font-semibold font-poppins flex justify-center'}>
           <h1>
             <span className={'text-amber-400 font-extrabold'}>&gt; </span>Creative
           </h1>
