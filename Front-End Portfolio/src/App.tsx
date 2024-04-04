@@ -10,6 +10,7 @@ import NavBar from './components/NavBar';
 import { useRef } from 'react';
 import VideoWall from './components/VideoWall';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 function App() {
   // refs for NavBar scroll feature
@@ -113,6 +114,7 @@ function App() {
 
       <Footer />
       <Analytics />
+      <SpeedInsights />
     </>
   );
 }
