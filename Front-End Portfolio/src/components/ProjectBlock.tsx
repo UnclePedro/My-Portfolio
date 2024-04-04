@@ -27,11 +27,11 @@ function ProjectBlock(props: {
               <Icon iconImg={githubIcon} href={props.githubLink} alt={'Github Repo'} />
             </div>
           </div>
-          <div className={'hidden xl:flex flex-col' + (props.isImgOnLeft ? ' mr-12' : '')}>
+          <div className={'hidden lg:flex flex-col' + (props.isImgOnLeft ? ' mr-12' : '')}>
             <img
               src={props.img}
               alt="headshot"
-              className={'hidden xl:flex flex-end h-[300px] object-cover aspect-square rounded-lg'}
+              className={'hidden lg:flex flex-end h-[300px] object-cover aspect-square rounded-lg'}
             />
           </div>
         </div>
