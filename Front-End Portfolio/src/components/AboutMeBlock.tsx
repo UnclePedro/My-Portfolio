@@ -17,21 +17,21 @@ function AboutMeBlock(props: { title: string; description1: string; description2
                 <span className={'text-amber-400 font-extrabold'}>&gt;</span> TypeScript
               </li>
               <li>
-                <span className={'text-amber-400 font-extrabold'}>&gt;</span> React
+                <span className={'text-amber-400 font-extrabold'}>&gt;</span> Tailwind CSS
               </li>
               <li>
-                <span className={'text-amber-400 font-extrabold'}>&gt;</span> CSS
+                <span className={'text-amber-400 font-extrabold'}>&gt;</span> HTML
               </li>
             </ol>
             <ol className={'text-lg md:text-2xl my-8 inline-flex flex-col pl-20'}>
               <li>
-                <span className={'text-amber-400 font-extrabold'}>&gt;</span> GitHub
+                <span className={'text-amber-400 font-extrabold'}>&gt;</span> React
               </li>
               <li>
-                <span className={'text-amber-400 font-extrabold'}>&gt;</span> Tailwind
+                <span className={'text-amber-400 font-extrabold'}>&gt;</span> Github
               </li>
               <li>
-                <span className={'text-amber-400 font-extrabold'}>&gt;</span> HTML
+                <span className={'text-amber-400 font-extrabold'}>&gt;</span> Figma
               </li>
             </ol>
           </div>

@@ -43,7 +43,7 @@ function App() {
         <AboutMeBlock
           title={'Who am I?'}
           description1={
-            'I’m branching out - I’m learning to code. The past decade of my life has revolved around digital marketing, video production and photography. Now, I’m eager to grow my skillset and help build great tech solutions as a programmer.'
+            'I’m branching out - I’m learning to code. The past decade of my life has revolved around digital marketing, video production and photography. Now, I’m eager to grow my skillset and help build great software solutions as a programmer.'
           }
           description2={
             'This change comes as an exploration, a challenge to myself, to never stagnate! Front-end developer loading…'
@@ -99,9 +99,9 @@ function App() {
           </h1>
         </div>
         <VideoWall
-          url1={'https://vimeo.com/manage/videos/392623163'}
-          url2={'https://vimeo.com/manage/videos/705603730'}
-          url3={'https://vimeo.com/manage/videos/642573090'}
+          url1={'https://youtu.be/KikH6OoOjQM'}
+          url2={'https://youtu.be/6e62HmtnXeA'}
+          url3={'https://youtu.be/MJDwShoXEKo'}
         />
       </div>
 
