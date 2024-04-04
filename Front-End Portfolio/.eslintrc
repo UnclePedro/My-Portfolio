@@ -6,7 +6,9 @@
     "plugin:import/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended",
-    "eslint-config-prettier"
+    "eslint-config-prettier",
+    "airbnb-typescript-prettier",
+    "next"
   ],
   "settings": {
     "react": {

@@ -1,5 +1,3 @@
-//import { useState } from 'react';
-//import styles from './App.module.css';
 import headshot from '../src/assets/headshot-assets/Headshot-square.png';
 import tempProjectImg from '../src/assets/project-placeholder.png';
 import playThisProjectImg from '../src/assets/play-this-project.png';
@@ -7,11 +5,11 @@ import ProjectBlock from './components/ProjectBlock';
 import AboutMeBlock from './components/AboutMeBlock';
 import LandingPageBanner from './components/LandingPageBanner';
 import GetInTouch from './components/GetInTouch';
-// import ArrowElement from './components/ArrowElement';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import { useRef } from 'react';
 import VideoWall from './components/VideoWall';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   // refs for NavBar scroll feature
@@ -114,6 +112,7 @@ function App() {
       </div>
 
       <Footer />
+      <Analytics />
     </>
   );
 }
