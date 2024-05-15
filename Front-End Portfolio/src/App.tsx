@@ -62,7 +62,7 @@ function App() {
           description={
             'Curate a Spotify playlist with your favourite tunes through this interactive web app! Give it a custom name and save it to your own Spotify account.'
           }
-          title={'Play-This (in development)'}
+          title={'Play-This'}
           img={playThisProjectImg}
           isImgOnLeft={false}
           projectLink={'https://play-this-app.vercel.app/'}
