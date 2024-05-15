@@ -60,6 +60,17 @@ function App() {
 
         <ProjectBlock
           description={
+            'Curate a Spotify playlist with your favourite tunes through this interactive web app! Give it a custom name and save it to your own Spotify account.'
+          }
+          title={'Play-This (in development)'}
+          img={playThisProjectImg}
+          isImgOnLeft={false}
+          projectLink={'https://play-this-app.vercel.app/'}
+          githubLink={'https://github.com/UnclePedro/Spotify-Playlist-App'}
+        />
+
+        <ProjectBlock
+          description={
             'Ever wanted to communicate via encrypted messages? Here’s a fun app that will mash your messages, or un-mash messages from your friends.'
           }
           title={'Message Masher'}
@@ -69,16 +80,6 @@ function App() {
           githubLink={'https://github.com/UnclePedro/message-masher'}
         />
 
-        <ProjectBlock
-          description={
-            'Curate a Spotify playlist with your favourite tunes through this interactive web app! Give it a custom name and save it to your own Spotify account.'
-          }
-          title={'Play-This (in development)'}
-          img={playThisProjectImg}
-          isImgOnLeft={false}
-          projectLink={'https://github.com/UnclePedro/Spotify-Playlist-App'}
-          githubLink={'https://github.com/UnclePedro/Spotify-Playlist-App'}
-        />
         {/* <ProjectBlock
           description={
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
