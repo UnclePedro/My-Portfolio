@@ -65,7 +65,7 @@ function App() {
           title={'Play-This'}
           img={playThisProjectImg}
           isImgOnLeft={false}
-          projectLink={'https://play-this-app.vercel.app/'}
+          projectLink={'https://youtu.be/1hcrog90G5c'}
           githubLink={'https://github.com/UnclePedro/Spotify-Playlist-App'}
         />
 
