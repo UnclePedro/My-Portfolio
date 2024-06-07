@@ -1,6 +1,7 @@
 import headshot from '../src/assets/headshot-assets/Headshot-square.png';
 import tempProjectImg from '../src/assets/project-placeholder.png';
 import playThisProjectImg from '../src/assets/play-this-project.png';
+import appointmentProjectImg from '../src/assets/appointment-planner.png';
 import ProjectBlock from './components/ProjectBlock';
 import AboutMeBlock from './components/AboutMeBlock';
 import LandingPageBanner from './components/LandingPageBanner';
@@ -71,25 +72,25 @@ function App() {
 
         <ProjectBlock
           description={
+            'Curate a Spotify playlist with your favourite tunes through this interactive web app! Give it a custom name and save it to your own Spotify account.'
+          }
+          title={'Play-This'}
+          img={appointmentProjectImg}
+          isImgOnLeft={true}
+          projectLink={'https://appointment-planning.vercel.app/contacts'}
+          githubLink={'https://github.com/UnclePedro/Appointment-Planner'}
+        />
+
+        <ProjectBlock
+          description={
             'Ever wanted to communicate via encrypted messages? Here’s a fun app that will mash your messages, or un-mash messages from your friends.'
           }
           title={'Message Masher'}
           img={tempProjectImg}
-          isImgOnLeft={true}
+          isImgOnLeft={false}
           projectLink={'https://message-masher.vercel.app/'}
           githubLink={'https://github.com/UnclePedro/message-masher'}
         />
-
-        {/* <ProjectBlock
-          description={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet consectetur felis quis porta. Nam eleifend accumsan ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-          }
-          title={'Find Your Hat'}
-          img={tempProjectImg}
-          isImgOnLeft={false}
-          projectLink={''}
-          githubLink={''}
-        /> */}
       </div>
 
       <div className={'mt-32 md:mt-56'} ref={creativeRef}>
