@@ -1,7 +1,7 @@
 import headshot from '../src/assets/headshot-assets/Headshot-square.png';
 import tempProjectImg from '../src/assets/project-placeholder.png';
 import playThisProjectImg from '../src/assets/play-this-project.png';
-import appointmentProjectImg from '../src/assets/appointment-planner.png';
+import appointmentProjectImg from '../src/assets/appointment-planner1.png';
 import ProjectBlock from './components/ProjectBlock';
 import AboutMeBlock from './components/AboutMeBlock';
 import LandingPageBanner from './components/LandingPageBanner';
@@ -72,9 +72,9 @@ function App() {
 
         <ProjectBlock
           description={
-            'Curate a Spotify playlist with your favourite tunes through this interactive web app! Give it a custom name and save it to your own Spotify account.'
+            'Add contacts to your patient list with their details, then use the appointment form to book appointments with their now saved contact information.'
           }
-          title={'Play-This'}
+          title={'Appointment Planner'}
           img={appointmentProjectImg}
           isImgOnLeft={true}
           projectLink={'https://appointment-planning.vercel.app/contacts'}
