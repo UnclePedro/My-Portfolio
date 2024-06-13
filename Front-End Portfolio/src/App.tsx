@@ -36,7 +36,7 @@ function App() {
 
       <LandingPageBanner
         heading1={"Hi, I'm Peter"}
-        heading2={'Welcome to my front-end portfolio'}
+        heading2={'Welcome to my developer portfolio'}
         landingBannerRef={landingBannerRef}
       />
       <div className={'md:pt-20'} ref={aboutRef}>
@@ -46,7 +46,7 @@ function App() {
             'I’m branching out - I’m learning to code. The past decade of my life has revolved around digital marketing, video production and photography. Now, I’m eager to grow my skillset and help build great software solutions as a programmer.'
           }
           description2={
-            'This change comes as an exploration, a challenge to myself, to never stagnate! Front-end developer loading…'
+            'This change comes as an exploration, a challenge to myself, to never stagnate! Software developer loading…'
           }
           img={headshot}
         />
