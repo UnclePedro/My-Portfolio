@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import pFavicon from '../../src/assets/favicon-p.png';
 import hamburger from '../../src/assets/icons/hamburger.svg';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 function NavBar(props: {
   heading1: string;
@@ -61,8 +62,12 @@ function NavBar(props: {
 
   return (
     <div className="flex w-full p-8 absolute" onScroll={toggleHamburger}>
+      <div className="flex w-full -ml-48 -mt-6 h-40">
+        <DotLottieReact src="../../src/assets/p-favicon-json.json" autoplay playOnHover />
+      </div>
+
       <div className={'flex justify-between w-full'}>
-        <img src={pFavicon} className="w-14 md:w-24 animation-reverse-bounce" alt="P favicon" />
+        {/* <img src={pFavicon} className="w-14 md:w-24 animation-reverse-bounce" alt="P favicon" /> */}
         <button onClick={toggleHamburger}>
           <img
             src={hamburger}
@@ -71,6 +76,7 @@ function NavBar(props: {
           />
         </button>
       </div>
+
       {hamburgerOpen && (
         <div className={`flex flex-col fixed text-xl font-poppins bg-neutral-800 rounded-xl p-4 md:hidden`}>
           <button
