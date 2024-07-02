@@ -3,6 +3,7 @@ import linkedin from '../../src/assets/icons/linkedin.svg';
 import instagram from '../../src/assets/icons/instagram.svg';
 // import email from '../../src/assets/icons/email.svg';
 import githubIcon from '../../src/assets/icons/github.svg';
+import pfavicon from '../../src/assets/p-favicon-json2.json';
 
 function GetInTouch(props: { title: string; bodyText: string; buttonText: string }) {
   return (

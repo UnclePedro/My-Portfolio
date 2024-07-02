@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import pFavicon from '../../src/assets/favicon-p.png';
 import hamburger from '../../src/assets/icons/hamburger.svg';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { create } from '@lottiefiles/lottie-interactivity';
+import { Fade } from 'react-awesome-reveal';
 
 function NavBar(props: {
   heading1: string;
@@ -61,24 +63,62 @@ function NavBar(props: {
   };
 
   return (
-    <div className="flex w-full p-8 absolute" onScroll={toggleHamburger}>
-      <div className="flex w-full -ml-48 -mt-6 h-40">
-        <DotLottieReact src="../../src/assets/p-favicon-json.json" autoplay playOnHover />
-      </div>
+    <Fade triggerOnce={true}>
+      <div className="flex w-full p-8 absolute" onScroll={toggleHamburger}>
+        <div className="flex w-full h-20 -ml-20 -mt-2  sm:-ml-44 md:-ml-12 md:h-24 lg:h-28 lg:-ml-24 xl:-ml-40 ">
+          <DotLottieReact src="../../src/assets/p-favicon-json2.json" id="#firstLottie" autoplay playOnHover />
+        </div>
 
-      <div className={'flex justify-between w-full'}>
-        {/* <img src={pFavicon} className="w-14 md:w-24 animation-reverse-bounce" alt="P favicon" /> */}
-        <button onClick={toggleHamburger}>
-          <img
-            src={hamburger}
-            className="justify-end right-8 top-10 fixed w-12 bg-neutral-800 rounded-xl p-2 md:hidden"
-            alt="Hamburger"
-          />
-        </button>
-      </div>
+        <div className={'flex justify-between w-full'}>
+          {/* <img src={pFavicon} className="w-14 md:w-24 animation-reverse-bounce" alt="P favicon" /> */}
+          <button onClick={toggleHamburger}>
+            <img
+              src={hamburger}
+              className="justify-end right-8 top-10 fixed w-12 bg-neutral-800 rounded-xl p-2 md:hidden"
+              alt="Hamburger"
+            />
+          </button>
+        </div>
 
-      {hamburgerOpen && (
-        <div className={`flex flex-col fixed text-xl font-poppins bg-neutral-800 rounded-xl p-4 md:hidden`}>
+        {hamburgerOpen && (
+          <div className={`flex flex-col fixed text-xl font-poppins bg-neutral-800 rounded-xl p-4 md:hidden`}>
+            <button
+              onClick={() => scrollToSection(props.aboutRef)}
+              className="transition ease-in-out duration-500 hover:text-amber-400"
+            >
+              {props.heading1}
+            </button>
+            <button
+              onClick={() => scrollToSection(props.projectRef)}
+              className="transition ease-in-out duration-500 hover:text-amber-400 pt-2"
+            >
+              {props.heading2}
+            </button>
+            <button
+              onClick={() => scrollToSection(props.creativeRef)}
+              className="transition ease-in-out duration-500 hover:text-amber-400 pt-2"
+            >
+              {props.heading3}
+            </button>
+            <button
+              onClick={() => scrollToSection(props.contactRef)}
+              className="transition ease-in-out duration-500 hover:text-amber-400 pt-2"
+            >
+              {props.heading4}
+            </button>
+
+            {/* {showBackToTop && (
+            <button
+              className="transition ease-in-out duration-500 hover:text-amber-400 ${showBackToTop ? 'opacity-100' : 'opacity-0 hidden'"
+              onClick={() => scrollToSection(props.landingBannerRef)}
+            >
+              Back to top
+            </button>
+          )} */}
+          </div>
+        )}
+
+        <div className={'hidden md:flex text-2xl font-poppins w-full space-x-6 justify-end mr-12'}>
           <button
             onClick={() => scrollToSection(props.aboutRef)}
             className="transition ease-in-out duration-500 hover:text-amber-400"
@@ -87,71 +127,35 @@ function NavBar(props: {
           </button>
           <button
             onClick={() => scrollToSection(props.projectRef)}
-            className="transition ease-in-out duration-500 hover:text-amber-400 pt-2"
+            className="transition ease-in-out duration-500 hover:text-amber-400"
           >
             {props.heading2}
           </button>
           <button
             onClick={() => scrollToSection(props.creativeRef)}
-            className="transition ease-in-out duration-500 hover:text-amber-400 pt-2"
+            className="transition ease-in-out duration-500 hover:text-amber-400"
           >
             {props.heading3}
           </button>
           <button
             onClick={() => scrollToSection(props.contactRef)}
-            className="transition ease-in-out duration-500 hover:text-amber-400 pt-2"
+            className="transition ease-in-out duration-500 hover:text-amber-400 "
           >
             {props.heading4}
           </button>
-
-          {/* {showBackToTop && (
-            <button
-              className="transition ease-in-out duration-500 hover:text-amber-400 ${showBackToTop ? 'opacity-100' : 'opacity-0 hidden'"
-              onClick={() => scrollToSection(props.landingBannerRef)}
-            >
-              Back to top
-            </button>
-          )} */}
-        </div>
-      )}
-
-      <div className={'hidden md:flex text-2xl font-poppins w-full space-x-6 justify-end mr-12'}>
-        <button
-          onClick={() => scrollToSection(props.aboutRef)}
-          className="transition ease-in-out duration-500 hover:text-amber-400"
-        >
-          {props.heading1}
-        </button>
-        <button
-          onClick={() => scrollToSection(props.projectRef)}
-          className="transition ease-in-out duration-500 hover:text-amber-400"
-        >
-          {props.heading2}
-        </button>
-        <button
-          onClick={() => scrollToSection(props.creativeRef)}
-          className="transition ease-in-out duration-500 hover:text-amber-400"
-        >
-          {props.heading3}
-        </button>
-        <button
-          onClick={() => scrollToSection(props.contactRef)}
-          className="transition ease-in-out duration-500 hover:text-amber-400 "
-        >
-          {props.heading4}
-        </button>
-        <div className={'fixed'}>
-          {showBackToTop && (
-            <button
-              className="transition ease-in-out duration-500 hover:text-amber-400 bg-neutral-700 rounded-lg py-2 px-4 //${showBackToTop ? 'opacity-100' : 'opacity-0 hidden'"
-              onClick={() => scrollToSection(props.landingBannerRef)}
-            >
-              Back to top
-            </button>
-          )}
+          <div className={'fixed'}>
+            {showBackToTop && (
+              <button
+                className="transition ease-in-out duration-500 hover:text-amber-400 bg-neutral-700 rounded-lg py-2 px-4 //${showBackToTop ? 'opacity-100' : 'opacity-0 hidden'"
+                onClick={() => scrollToSection(props.landingBannerRef)}
+              >
+                Back to top
+              </button>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </Fade>
   );
 }
 
