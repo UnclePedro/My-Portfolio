@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import pFavicon from '../../src/assets/favicon-p.png';
 import hamburger from '../../src/assets/icons/hamburger.svg';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import { create } from '@lottiefiles/lottie-interactivity';
 import { Fade } from 'react-awesome-reveal';
 
 function NavBar(props: {
