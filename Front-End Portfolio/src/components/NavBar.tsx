@@ -63,7 +63,7 @@ function NavBar(props: {
   };
 
   return (
-    <Fade triggerOnce={true}>
+    <Fade triggerOnce={true} duration={1600}>
       <div className="flex w-full p-8 absolute" onScroll={toggleHamburger}>
         <div className="flex w-full h-20 -ml-20 -mt-2  sm:-ml-44 md:-ml-12 md:h-24 lg:h-28 lg:-ml-24 xl:-ml-40 ">
           <DotLottieReact src="../../src/assets/p-favicon-json2.json" id="#firstLottie" autoplay playOnHover />
