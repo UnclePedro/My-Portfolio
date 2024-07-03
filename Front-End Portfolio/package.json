@@ -19,7 +19,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@lottiefiles/dotlottie-react": "^version_number"
+    "@lottiefiles/dotlottie-react": "^0.7.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
