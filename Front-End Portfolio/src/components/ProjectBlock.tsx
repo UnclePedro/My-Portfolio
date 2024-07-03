@@ -1,6 +1,7 @@
 import Icon from './Icon';
 import githubIcon from '../../src/assets/icons/github.svg';
 import external from '../../src/assets/icons/external.svg';
+import { Fade } from 'react-awesome-reveal';
 
 function ProjectBlock(props: {
   title: string;
@@ -12,30 +13,32 @@ function ProjectBlock(props: {
 }) {
   return (
     <>
-      <div className={'flex justify-center mt-14'}>
-        <div
-          className={
-            'w-10/12 xl:w-[1000px] font-poppins flex justify-center bg-neutral-900 p-10 rounded-lg shadow-goldenSmall md:hover:shadow-goldenMedium transition-shadow duration-300' +
-            (props.isImgOnLeft ? ' flex-row-reverse' : '')
-          }
-        >
-          <div className={'max-w-[550px]'}>
-            <h2 className="text-3xl md:text-4xl font-semibold">{props.title}</h2>
-            <p className={'text-lg md:text-2xl my-6'}>{props.description}</p>
-            <div className={'flex flex-row -ml-3 w-28 md:w-36'}>
-              <Icon iconImg={external} href={props.projectLink} alt={'Live Project'} />
-              <Icon iconImg={githubIcon} href={props.githubLink} alt={'Github Repo'} />
+      <Fade fraction={0.3} triggerOnce>
+        <div className={'flex justify-center mt-14'}>
+          <div
+            className={
+              'w-10/12 xl:w-[1000px] font-poppins flex justify-center bg-neutral-900 p-10 rounded-lg shadow-goldenSmall md:hover:shadow-goldenMedium transition-shadow duration-300' +
+              (props.isImgOnLeft ? ' flex-row-reverse' : '')
+            }
+          >
+            <div className={'max-w-[550px]'}>
+              <h2 className="text-3xl md:text-4xl font-semibold">{props.title}</h2>
+              <p className={'text-lg md:text-2xl my-6'}>{props.description}</p>
+              <div className={'flex flex-row -ml-3 w-28 md:w-36'}>
+                <Icon iconImg={external} href={props.projectLink} alt={'Live Project'} />
+                <Icon iconImg={githubIcon} href={props.githubLink} alt={'Github Repo'} />
+              </div>
+            </div>
+            <div className={'hidden lg:flex flex-col' + (props.isImgOnLeft ? ' mr-12' : '')}>
+              <img
+                src={props.img}
+                alt="headshot"
+                className={'hidden lg:flex flex-end h-[300px] object-cover aspect-square rounded-lg'}
+              />
             </div>
           </div>
-          <div className={'hidden lg:flex flex-col' + (props.isImgOnLeft ? ' mr-12' : '')}>
-            <img
-              src={props.img}
-              alt="headshot"
-              className={'hidden lg:flex flex-end h-[300px] object-cover aspect-square rounded-lg'}
-            />
-          </div>
         </div>
-      </div>
+      </Fade>
     </>
   );
 }

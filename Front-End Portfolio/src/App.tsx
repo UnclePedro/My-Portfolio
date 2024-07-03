@@ -11,7 +11,6 @@ import NavBar from './components/NavBar';
 import { useRef } from 'react';
 import VideoWall from './components/VideoWall';
 import { Analytics } from '@vercel/analytics/react';
-import { Fade } from 'react-awesome-reveal';
 // import { SpeedInsights } from '@vercel/speed-insights/next';
 
 function App() {
@@ -60,52 +59,45 @@ function App() {
           </h1>
         </div>
 
-        <Fade fraction={0.3} triggerOnce>
-          <ProjectBlock
-            description={
-              'Curate a Spotify playlist with your favourite tunes through this interactive web app! Give it a custom name and save it to your own Spotify account.'
-            }
-            title={'Play-This'}
-            img={playThisProjectImg}
-            isImgOnLeft={false}
-            projectLink={'https://youtu.be/1hcrog90G5c'}
-            githubLink={'https://github.com/UnclePedro/Spotify-Playlist-App'}
-          />
-        </Fade>
-        <Fade fraction={0.3} triggerOnce>
-          <ProjectBlock
-            description={
-              'Add contacts to your patient list with their details, then use the appointment form to book appointments with their now saved contact information.'
-            }
-            title={'Appointment Planner'}
-            img={appointmentProjectImg}
-            isImgOnLeft={true}
-            projectLink={'https://appointment-planning.vercel.app/contacts'}
-            githubLink={'https://github.com/UnclePedro/Appointment-Planner'}
-          />
-        </Fade>
-        <Fade fraction={0.3} triggerOnce>
-          <ProjectBlock
-            description={
-              'Ever wanted to communicate via encrypted messages? Here’s a fun app that will mash your messages, or un-mash messages from your friends.'
-            }
-            title={'Message Masher'}
-            img={tempProjectImg}
-            isImgOnLeft={false}
-            projectLink={'https://message-masher.vercel.app/'}
-            githubLink={'https://github.com/UnclePedro/message-masher'}
-          />
-        </Fade>
+        <ProjectBlock
+          description={
+            'Curate a Spotify playlist with your favourite tunes through this interactive web app! Give it a custom name and save it to your own Spotify account.'
+          }
+          title={'Play-This'}
+          img={playThisProjectImg}
+          isImgOnLeft={false}
+          projectLink={'https://youtu.be/1hcrog90G5c'}
+          githubLink={'https://github.com/UnclePedro/Spotify-Playlist-App'}
+        />
+
+        <ProjectBlock
+          description={
+            'Add contacts to your patient list with their details, then use the appointment form to book appointments with their now saved contact information.'
+          }
+          title={'Appointment Planner'}
+          img={appointmentProjectImg}
+          isImgOnLeft={true}
+          projectLink={'https://appointment-planning.vercel.app/contacts'}
+          githubLink={'https://github.com/UnclePedro/Appointment-Planner'}
+        />
+
+        <ProjectBlock
+          description={
+            'Ever wanted to communicate via encrypted messages? Here’s a fun app that will mash your messages, or un-mash messages from your friends.'
+          }
+          title={'Message Masher'}
+          img={tempProjectImg}
+          isImgOnLeft={false}
+          projectLink={'https://message-masher.vercel.app/'}
+          githubLink={'https://github.com/UnclePedro/message-masher'}
+        />
       </div>
 
       <div className={'mt-32 md:mt-56'} ref={creativeRef}>
         <div className={'text-5xl mb-8 md:text-6xl font-semibold font-poppins flex justify-center'}>
-          <Fade>
-            {' '}
-            <h1>
-              <span className={'text-amber-400 font-extrabold'}>&gt; </span>Creative
-            </h1>
-          </Fade>
+          <h1>
+            <span className={'text-amber-400 font-extrabold'}>&gt; </span>Creative
+          </h1>
         </div>
         <VideoWall
           url1={'https://youtu.be/KikH6OoOjQM'}
