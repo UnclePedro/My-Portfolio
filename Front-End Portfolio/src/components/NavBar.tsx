@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-// import pFavicon from '../../src/assets/favicon-p.png';
+import pFavicon from '../../src/assets/favicon-p.png';
 import hamburger from '../../src/assets/icons/hamburger.svg';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { Fade } from 'react-awesome-reveal';
@@ -64,12 +64,12 @@ function NavBar(props: {
   return (
     <Fade triggerOnce={true} duration={1600}>
       <div className="flex w-full p-8 absolute" onScroll={toggleHamburger}>
-        <div className="flex w-full h-20 -ml-20 -mt-2  sm:-ml-44 md:-ml-12 md:h-24 lg:h-28 lg:-ml-24 xl:-ml-40 ">
+        {/* <div className="flex w-full h-20 -ml-20 -mt-2  sm:-ml-44 md:-ml-12 md:h-24 lg:h-28 lg:-ml-24 xl:-ml-40 ">
           <DotLottieReact src="../../src/assets/p-favicon-json2.json" id="#firstLottie" autoplay playOnHover />
-        </div>
+        </div> */}
 
         <div className={'flex justify-between w-full'}>
-          {/* <img src={pFavicon} className="w-14 md:w-24 animation-reverse-bounce" alt="P favicon" /> */}
+          <img src={pFavicon} className="w-14 md:w-24 animation-reverse-bounce" alt="P favicon" />
           <button onClick={toggleHamburger}>
             <img
               src={hamburger}
