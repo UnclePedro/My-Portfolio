@@ -14,10 +14,19 @@ function ProjectBlock(props: {
   return (
     <>
       <Fade fraction={0.3} triggerOnce>
-        <div className={'flex justify-center mt-14'}>
+        <div className={'relative flex justify-center mt-14'}>
+          <div
+            className={'absolute inset-0 -z-10 blur-sm w-10/12 m-auto xl:hidden'}
+            style={{
+              backgroundImage: `url(${props.img})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              opacity: '0.3',
+            }}
+          />
           <div
             className={
-              'w-10/12 xl:w-[1000px] font-poppins flex justify-center bg-neutral-900 p-10 rounded-lg shadow-goldenSmall md:hover:shadow-goldenMedium transition-shadow duration-300' +
+              `relative w-10/12 bg-opacity-0 xl:bg-opacity-100 xl:w-[1000px] font-poppins flex justify-center bg-neutral-900 p-10 rounded-lg shadow-goldenSmall md:hover:shadow-goldenMedium transition-shadow duration-300` +
               (props.isImgOnLeft ? ' flex-row-reverse' : '')
             }
           >
@@ -33,7 +42,7 @@ function ProjectBlock(props: {
               <img
                 src={props.img}
                 alt="headshot"
-                className={'hidden lg:flex flex-end h-[300px] object-cover aspect-square rounded-lg'}
+                className={'hidden xl:flex flex-end h-[300px] object-cover aspect-square rounded-lg'}
               />
             </div>
           </div>
