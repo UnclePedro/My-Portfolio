@@ -78,8 +78,8 @@ function App() {
           title={'Climb Harder v1.0'}
           img={climbHarderProjectImg}
           isImgOnLeft={true}
-          projectLink={'https://github.com/UnclePedro/Climb-Harder'}
-          githubLink={'https://github.com/UnclePedro/climbing-training-logbook'}
+          projectLink={'https://climb-harder.vercel.app'}
+          githubLink={'https://github.com/UnclePedro/Climb-Harder'}
         />
 
         <ProjectBlock
