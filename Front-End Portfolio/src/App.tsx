@@ -78,7 +78,7 @@ function App() {
           title={'Climb Harder v1.0'}
           img={climbHarderProjectImg}
           isImgOnLeft={true}
-          projectLink={'https://climb-harder.vercel.app'}
+          projectLink={'https://climb-harder.peterforsyth.dev'}
           githubLink={'https://github.com/UnclePedro/Climb-Harder'}
         />
 
@@ -89,7 +89,7 @@ function App() {
           title={'Appointment Planner'}
           img={appointmentProjectImg}
           isImgOnLeft={false}
-          projectLink={'https://appointment-planning.vercel.app/contacts'}
+          projectLink={'https://appointment-planner.peterforsyth.dev/contacts'}
           githubLink={'https://github.com/UnclePedro/Appointment-Planner'}
         />
 
@@ -100,7 +100,7 @@ function App() {
           title={'Message Masher'}
           img={tempProjectImg}
           isImgOnLeft={true}
-          projectLink={'https://message-masher.vercel.app/'}
+          projectLink={'https://message-masher.peterforsyth.dev/'}
           githubLink={'https://github.com/UnclePedro/message-masher'}
         />
       </div>
