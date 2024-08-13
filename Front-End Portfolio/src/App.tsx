@@ -1,7 +1,6 @@
 import headshot from '../src/assets/headshot-assets/Headshot-square.png';
 import tempProjectImg from '../src/assets/project-placeholder.png';
 import playThisProjectImg from '../src/assets/play-this-project.png';
-import appointmentProjectImg from '../src/assets/appointment-planner1.png';
 import climbHarderProjectImg from '../src/assets/climb-harder-project.png';
 import ProjectBlock from './components/ProjectBlock';
 import AboutMeBlock from './components/AboutMeBlock';
@@ -12,7 +11,6 @@ import NavBar from './components/NavBar';
 import { useRef } from 'react';
 import VideoWall from './components/VideoWall';
 import { Analytics } from '@vercel/analytics/react';
-// import { SpeedInsights } from '@vercel/speed-insights/next';
 
 function App() {
   // refs for NavBar scroll feature
@@ -62,35 +60,24 @@ function App() {
 
         <ProjectBlock
           description={
-            'Curate a Spotify playlist with your favourite tunes through this interactive web app that leverages the Spotify API! Give it a custom name and save it to your own Spotify account.'
+            'Keep track of your climbing training, goals and achievements across seasons in one place. Data analysis features are under development.'
           }
-          title={'Play-This'}
-          img={playThisProjectImg}
-          isImgOnLeft={false}
-          projectLink={'https://youtu.be/1hcrog90G5c'}
-          githubLink={'https://github.com/UnclePedro/Spotify-Playlist-App'}
-        />
-
-        <ProjectBlock
-          description={
-            'Keep track of your climbing training, goals and achievements across seasons in one place. Data analysis and season history features are under development.'
-          }
-          title={'Climb Harder v1.0'}
+          title={'Climb Harder'}
           img={climbHarderProjectImg}
-          isImgOnLeft={true}
+          isImgOnLeft={false}
           projectLink={'https://climb-harder.peterforsyth.dev'}
           githubLink={'https://github.com/UnclePedro/Climb-Harder'}
         />
 
         <ProjectBlock
           description={
-            'Add contacts to your patient list with their details, then use the appointment form to book appointments with their now saved contact information.'
+            'Curate a Spotify playlist with your favourite tunes through this interactive web app that leverages the Spotify API! Give it a custom name and save it to your own Spotify account.'
           }
-          title={'Appointment Planner'}
-          img={appointmentProjectImg}
-          isImgOnLeft={false}
-          projectLink={'https://appointment-planner.peterforsyth.dev/contacts'}
-          githubLink={'https://github.com/UnclePedro/Appointment-Planner'}
+          title={'Play-This'}
+          img={playThisProjectImg}
+          isImgOnLeft={true}
+          projectLink={'https://youtu.be/1hcrog90G5c'}
+          githubLink={'https://github.com/UnclePedro/Spotify-Playlist-App'}
         />
 
         <ProjectBlock
@@ -99,7 +86,7 @@ function App() {
           }
           title={'Message Masher'}
           img={tempProjectImg}
-          isImgOnLeft={true}
+          isImgOnLeft={false}
           projectLink={'https://message-masher.peterforsyth.dev/'}
           githubLink={'https://github.com/UnclePedro/message-masher'}
         />
