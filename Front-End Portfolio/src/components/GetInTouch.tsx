@@ -16,12 +16,10 @@ function GetInTouch(props: { title: string; bodyText: string; buttonText: string
           </h2>
           <p className={'text-lg md:text-2xl my-8'}>{props.bodyText}</p>
           <div className={'flex justify-center'}>
-            <Icon iconImg={linkedin} href={'https://www.linkedin.com/in/peter-forsyth-a89590175/'} alt={'linkedIn'} />
+            <Icon iconImg={linkedin} href={'https://www.linkedin.com/in/p-forsyth/'} alt={'linkedIn'} />
             <Icon iconImg={instagram} href={'https://www.instagram.com/peterforsyth_/'} alt={'Instagram'} />
-            {/* <Icon img={email} href={'https://www.instagram.com/peterforsyth_/'} alt={'email'} /> */}
             <Icon iconImg={githubIcon} href={'https://github.com/UnclePedro'} alt={'Github'} />
           </div>
-          {/* <button className={' bg-amber-400 text-gray-800 h-14 w-32 rounded-md font-semibold'}>{props.buttonText}</button> */}
         </Fade>
       </div>
     </div>
