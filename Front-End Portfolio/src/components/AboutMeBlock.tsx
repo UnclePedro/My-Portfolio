@@ -34,10 +34,10 @@ function AboutMeBlock(props: { title: string; description1: string; description2
                     <span className={'text-amber-400 font-extrabold'}>&gt;</span> React
                   </li>
                   <li>
-                    <span className={'text-amber-400 font-extrabold'}>&gt;</span> Github
+                    <span className={'text-amber-400 font-extrabold'}>&gt;</span> Figma
                   </li>
                   <li>
-                    <span className={'text-amber-400 font-extrabold'}>&gt;</span> Figma
+                    <span className={'text-amber-400 font-extrabold'}>&gt;</span> {`Console.log`}
                   </li>
                 </ol>
               </Fade>

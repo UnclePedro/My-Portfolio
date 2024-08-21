@@ -42,10 +42,10 @@ function App() {
         <AboutMeBlock
           title={'Who am I?'}
           description1={
-            'I’m branching out - I’m learning to code. The past decade of my life has revolved around digital marketing, video production and photography. Now, I’m eager to grow my skillset and help build great software solutions as a programmer.'
+            'I thought you’d never ask! I’m a TypeScript and React developer passionate about building elegant software solutions for real-world problems. I believe finding a better way to do something through code is one of life’s (not so) simple pleasures.'
           }
           description2={
-            'This change comes as an exploration, a challenge to myself, to never stagnate! Software developer loading…'
+            'Enjoy my programming projects, along with a glimpse at my digital marketing and video production work.'
           }
           img={headshot}
         />
