@@ -2,6 +2,7 @@ import headshot from '../src/assets/headshot-assets/Headshot-square.png';
 import tempProjectImg from '../src/assets/project-placeholder.png';
 import playThisProjectImg from '../src/assets/play-this-project.png';
 import climbHarderProjectImg from '../src/assets/climb-harder-project.png';
+import mindfulMemosProjectImg from '../src/assets/mindful-memos-img.png';
 import ProjectBlock from './components/ProjectBlock';
 import AboutMeBlock from './components/AboutMeBlock';
 import LandingPageBanner from './components/LandingPageBanner';
@@ -71,24 +72,24 @@ function App() {
 
         <ProjectBlock
           description={
-            'Curate a Spotify playlist with your favourite tunes through this interactive web app that leverages the Spotify API! Give it a custom name and save it to your own Spotify account.'
+            'An elegant full stack web app to read and curate thoughts worth sharing. Created with React, TypeScript, Node.js, Express.js and PostgreSQL.'
           }
-          title={'Play-This'}
-          img={playThisProjectImg}
+          title={'Mindful Memos'}
+          img={mindfulMemosProjectImg}
           isImgOnLeft={true}
-          projectLink={'https://youtu.be/1hcrog90G5c'}
-          githubLink={'https://github.com/UnclePedro/Spotify-Playlist-App'}
+          projectLink={'https://mindful-memos.peterforsyth.dev'}
+          githubLink={'https://github.com/UnclePedro/Mindful-Memos'}
         />
 
         <ProjectBlock
           description={
-            'Ever wanted to communicate via encrypted messages? Here’s a fun app that will mash your messages, or un-mash messages from your friends.'
+            'Curate a Spotify playlist with your favourite tunes through this interactive web app that leverages the Spotify API! Give it a custom name and save it to your own Spotify account.'
           }
-          title={'Message Masher'}
-          img={tempProjectImg}
+          title={'Play-This'}
+          img={playThisProjectImg}
           isImgOnLeft={false}
-          projectLink={'https://message-masher.peterforsyth.dev/'}
-          githubLink={'https://github.com/UnclePedro/message-masher'}
+          projectLink={'https://youtu.be/1hcrog90G5c'}
+          githubLink={'https://github.com/UnclePedro/Spotify-Playlist-App'}
         />
       </div>
 
