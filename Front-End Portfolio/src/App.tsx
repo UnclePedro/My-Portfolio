@@ -36,14 +36,14 @@ function App() {
 
       <LandingPageBanner
         heading1={"Hi, I'm Peter"}
-        heading2={'Welcome to my developer portfolio'}
+        heading2={'Welcome to my programming portfolio'}
         landingBannerRef={landingBannerRef}
       />
       <div className={'pt-4 md:pt-20'} ref={aboutRef}>
         <AboutMeBlock
           title={'Who am I?'}
           description1={
-            'I thought you’d never ask! I’m a TypeScript and React developer passionate about building elegant software solutions for real-world problems. I believe finding a better way to do something through code is one of life’s (not so) simple pleasures.'
+            'I thought you’d never ask! I’m a Full Stack Developer passionate about building elegant software solutions for real-world problems. I believe finding a better way to do something through code is one of life’s (not so) simple pleasures.'
           }
           description2={
             'Enjoy my programming projects, along with a glimpse at my digital marketing and video production work.'

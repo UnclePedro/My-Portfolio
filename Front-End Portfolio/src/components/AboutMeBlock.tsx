@@ -21,10 +21,10 @@ function AboutMeBlock(props: { title: string; description1: string; description2
                     <span className={'text-amber-400 font-extrabold'}>&gt;</span> TypeScript
                   </li>
                   <li>
-                    <span className={'text-amber-400 font-extrabold'}>&gt;</span> Tailwind CSS
+                    <span className={'text-amber-400 font-extrabold'}>&gt;</span> Node.js
                   </li>
                   <li>
-                    <span className={'text-amber-400 font-extrabold'}>&gt;</span> HTML
+                    <span className={'text-amber-400 font-extrabold'}>&gt;</span> PostgreSQL
                   </li>
                 </ol>
               </Fade>
@@ -34,10 +34,10 @@ function AboutMeBlock(props: { title: string; description1: string; description2
                     <span className={'text-amber-400 font-extrabold'}>&gt;</span> React
                   </li>
                   <li>
-                    <span className={'text-amber-400 font-extrabold'}>&gt;</span> Figma
+                    <span className={'text-amber-400 font-extrabold'}>&gt;</span> Express.js
                   </li>
                   <li>
-                    <span className={'text-amber-400 font-extrabold'}>&gt;</span> {`Console.log`}
+                    <span className={'text-amber-400 font-extrabold'}>&gt;</span> Tailwind
                   </li>
                 </ol>
               </Fade>
