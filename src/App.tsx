@@ -61,13 +61,13 @@ function App() {
 
         <ProjectBlock
           description={
-            'Keep track of your climbing training, goals and achievements across seasons in one place. Data analysis features are under development.'
+            'Keep track of your climbing training, goals and achievements across seasons in one place. Create and account or log in seamlessly with incling Google, Apple and Microsoft.'
           }
           title={'Climb Harder'}
           img={climbHarderProjectImg}
           isImgOnLeft={false}
           projectLink={'https://climb-harder.peterforsyth.dev'}
-          githubLink={'https://github.com/UnclePedro/Climb-Harder'}
+          githubLink={'https://github.com/UnclePedro/Climb-Harder-v2'}
         />
 
         <ProjectBlock
