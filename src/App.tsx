@@ -61,18 +61,18 @@ function App() {
 
         <ProjectBlock
           description={
-            'Keep track of your climbing training, goals and achievements across seasons in one place. Data analysis features are under development.'
+            'Keep track of your climbing training, goals and achievements across seasons in one place. Create an account or log in with Google, Apple, Microsoft or GitHub.'
           }
           title={'Climb Harder'}
           img={climbHarderProjectImg}
           isImgOnLeft={false}
           projectLink={'https://climb-harder.peterforsyth.dev'}
-          githubLink={'https://github.com/UnclePedro/Climb-Harder'}
+          githubLink={'https://github.com/UnclePedro/Climb-Harder-v2'}
         />
 
         <ProjectBlock
           description={
-            'An elegant full stack web app to read and curate thoughts worth sharing. Created with React, TypeScript, Node.js, Express.js and PostgreSQL.'
+            'An elegant full stack web app to read and curate thoughts worth sharing. Users are authenticated with OAuth2.0 to keep your data secure.'
           }
           title={'Mindful Memos'}
           img={mindfulMemosProjectImg}
