@@ -74,36 +74,12 @@ function NavBar(props: {
         </button>
       </div>
 
-      {hamburgerOpen && (
-        <div className={`flex flex-col fixed text-xl font-poppins bg-neutral-800 rounded-xl p-4 md:hidden`}>
-          <button
-            onClick={() => scrollToSection(props.aboutRef)}
-            className="transition ease-in-out duration-500 hover:text-amber-400"
-          >
-            {props.heading1}
-          </button>
-          <button
-            onClick={() => scrollToSection(props.projectRef)}
-            className="transition ease-in-out duration-500 hover:text-amber-400 pt-2"
-          >
-            {props.heading2}
-          </button>
-          <button
-            onClick={() => scrollToSection(props.creativeRef)}
-            className="transition ease-in-out duration-500 hover:text-amber-400 pt-2"
-          >
-            {props.heading3}
-          </button>
-          <button
-            onClick={() => scrollToSection(props.contactRef)}
-            className="transition ease-in-out duration-500 hover:text-amber-400 pt-2"
-          >
-            {props.heading4}
-          </button>
-        </div>
-      )}
-
-      <div className={'hidden md:flex text-2xl font-poppins w-full space-x-6 justify-end mr-12'}>
+      {/* Mobile Hamburger */}
+      <div
+        className={`flex transition duration-500 ease-in-out flex-col fixed text-xl font-poppins bg-neutral-800 rounded-xl p-4 md:hidden ${
+          hamburgerOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+        }`}
+      >
         <button
           onClick={() => scrollToSection(props.aboutRef)}
           className="transition ease-in-out duration-500 hover:text-amber-400"
@@ -112,32 +88,58 @@ function NavBar(props: {
         </button>
         <button
           onClick={() => scrollToSection(props.projectRef)}
-          className="transition ease-in-out duration-500 hover:text-amber-400"
+          className="transition ease-in-out duration-500 hover:text-amber-400 pt-2"
         >
           {props.heading2}
         </button>
         <button
           onClick={() => scrollToSection(props.creativeRef)}
-          className="transition ease-in-out duration-500 hover:text-amber-400"
+          className="transition ease-in-out duration-500 hover:text-amber-400 pt-2"
         >
           {props.heading3}
         </button>
         <button
           onClick={() => scrollToSection(props.contactRef)}
-          className="transition ease-in-out duration-500 hover:text-amber-400 "
+          className="transition ease-in-out duration-500 hover:text-amber-400 pt-2"
         >
           {props.heading4}
         </button>
-        <div className={'fixed z-10'}>
-          {showBackToTop && (
-            <button
-              className="transition ease-in-out duration-500 hover:text-amber-400 bg-neutral-700 rounded-lg py-2 px-4 //${showBackToTop ? 'opacity-100' : 'opacity-0 hidden'"
-              onClick={() => scrollToSection(props.landingBannerRef)}
-            >
-              Back to top
-            </button>
-          )}
-        </div>
+      </div>
+
+      {/* Desktop Nav Bar */}
+      <div className={'hidden md:flex text-2xl font-poppins w-full space-x-6 justify-end mr-12'}>
+        <button
+          onClick={() => scrollToSection(props.aboutRef)}
+          className="transition ease-in-out duration-500 hover:text-amber-400 hover:scale-105"
+        >
+          {props.heading1}
+        </button>
+        <button
+          onClick={() => scrollToSection(props.projectRef)}
+          className="transition ease-in-out duration-500 hover:text-amber-400 hover:scale-105"
+        >
+          {props.heading2}
+        </button>
+        <button
+          onClick={() => scrollToSection(props.creativeRef)}
+          className="transition ease-in-out duration-500 hover:text-amber-400 hover:scale-105"
+        >
+          {props.heading3}
+        </button>
+        <button
+          onClick={() => scrollToSection(props.contactRef)}
+          className="transition ease-in-out duration-500 hover:text-amber-400 hover:scale-105"
+        >
+          {props.heading4}
+        </button>
+        <button
+          className={`transition fixed ease-in-out duration-500 hover:text-amber-400 bg-neutral-700 rounded-lg py-2 px-4 ${
+            showBackToTop ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+          }`}
+          onClick={() => scrollToSection(props.landingBannerRef)}
+        >
+          Back to top
+        </button>
       </div>
     </div>
   );

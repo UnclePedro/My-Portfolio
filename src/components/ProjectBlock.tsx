@@ -41,7 +41,7 @@ function ProjectBlock(props: {
             <div className={'hidden lg:flex flex-col' + (props.isImgOnLeft ? ' mr-12' : '')}>
               <img
                 src={props.img}
-                alt="headshot"
+                alt="Project Image"
                 className={'hidden xl:flex flex-end h-[300px] object-cover aspect-square rounded-lg'}
               />
             </div>
